@@ -18,20 +18,16 @@ export type Sizes = {
   xl: string;
 };
 
+type ColorType = {
+  primary: string;
+  secondary: string;
+  "secondary-50": string;
+  danger: string;
+  warning: string;
+  success: string;
+};
+
 export type Styles = {
-  solid: {
-    primary: string;
-    secondary: string;
-    "secondary-50": string;
-    danger: string;
-    warning: string;
-    success: string;
-  };
-  outline: {
-    primary: string;
-    secondary: string;
-    danger: string;
-    warning: string;
-    success: string;
-  };
+  solid: ColorType;
+  outline: ColorType;
 };

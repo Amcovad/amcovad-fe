@@ -7,7 +7,6 @@ import { Logo, HamburgerMenu, WhiteLogo } from "@/public/assets/logo";
 import NavLink from "./NavLink";
 import navBarLink from "@/data/menu";
 import classNames from "classnames";
-import PropTypes from "prop-types";
 
 const style = {
   container: `relative top-1/4 w-full text-left pl-16 md:pl-32 mt-8`,
@@ -185,9 +184,6 @@ const Navbar = ({ authPageOnly }) => {
   );
 };
 
-Navbar.propTypes = {
-  authPageOnly: PropTypes.bool,
-};
 Navbar.defaultProps = {
   authPageOnly: false,
 };

@@ -2,9 +2,6 @@
 module.exports = {
   content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}', './data/**/*.{js,ts,jsx,tsx}'],
   safelist: [
-    'bg-[#01a1df]',
-    'bg-[#9B51E0]',
-    'bg-[#2F80ED]',
     'text-secondary-100',
     'bg-secondary-500',
     'bg-primary-500',
@@ -47,7 +44,6 @@ module.exports = {
     fontFamily: {
       RozhaOne: ['Rozha One', 'serif'],
       Inter: ['Inter', 'sans-serif'],
-      Poppins: ['Poppins', 'sans-serif']
     },
     extend: {
       backgroundImage: {
