@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import classNames from "classnames";
 import { ButtonProps, Sizes, Styles } from "../../types/index";
 
@@ -28,7 +27,7 @@ const Button = ({
         "text-white bg-primary-500 hover:bg-primary-600 hover:text-white focus:shadow-primary-xs ",
       secondary:
         "text-white bg-secondary-800 hover:bg-secondary-900 hover:text-white focus:shadow-secondary-xs",
-      "secondary-50":
+      "secondary-light":
         "text-secondary-500 bg-secondary-50 hover:bg-secondary-100 hover:text-secondary-600 focus:shadow-secondary-xs",
       danger:
         "text-white bg-danger-600 hover:bg-danger-500 hover:text-white focus:shadow-danger-xs",
@@ -50,9 +49,7 @@ const Button = ({
         "text-success-600 border border-success-600 hover:bg-success-500 hover:border-success-500 hover:text-white focus:shadow-success-xs ",
     },
   };
-  //   type OutlineClass = {
-  //     outline: any;
-  //   };
+
   const outlineClass = outline ? "outline" : "solid";
 
   return (
@@ -71,16 +68,6 @@ const Button = ({
       {rightIcon && <span className="ml-2 -mr-1 w-5 h-5">{rightIcon}</span>}
     </button>
   );
-};
-
-Button.propTypes = {
-  className: PropTypes.string,
-  color: PropTypes.string,
-  leftIcon: PropTypes.node,
-  onClick: PropTypes.func,
-  outline: PropTypes.bool,
-  rightIcon: PropTypes.node,
-  size: PropTypes.string,
 };
 
 Button.defaultProps = {

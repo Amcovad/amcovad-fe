@@ -88,5 +88,5 @@ input:-webkit-autofill:active {
 }
 
 .placeHolderClassName {
-  @apply border-secondary-300 bg-secondary-25 placeholder:text-secondary-700 font-Poppins text-secondary-700;
+  @apply border-secondary-300 bg-secondary-25 placeholder:text-secondary-700 text-secondary-700;
 }

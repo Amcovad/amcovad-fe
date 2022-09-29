@@ -48,7 +48,7 @@ const Tab = ({ data }: Data) => {
           {TabTitles}
         </ul>
 
-        <div className="py-1">{TabContent}</div>
+        <div className="py-1 dropcap ">{TabContent}</div>
       </div>
     </div>
   );

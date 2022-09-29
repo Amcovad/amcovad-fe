@@ -21,7 +21,7 @@ export type Sizes = {
 type ColorType = {
   primary: string;
   secondary: string;
-  "secondary-50": string;
+  "secondary-light"?: string;
   danger: string;
   warning: string;
   success: string;

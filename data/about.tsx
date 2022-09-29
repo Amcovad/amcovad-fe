@@ -4,8 +4,8 @@ type Content = {
 };
 
 export const aboutAmcovad = (
-  <>
-    <p className="paragraphs">
+  <div>
+    <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam volutpat,
       rutrum bibendum tincidunt nec velit dictumst. Pellentesque Luspendisse
       ultricies at a nunc, morbi. Amet, varius pulvinar quam fermentum, nulla
@@ -50,11 +50,11 @@ export const aboutAmcovad = (
       eget. Mus mauris vitae ultricies leo integer malesuada. Nunc sed id semper
       risus in hendrerit gravida rutrum.
     </p>
-  </>
+  </div>
 );
 export const ourMission = (
-  <>
-    <p className="paragraphs">
+  <div>
+    <p>
       Lorem spsum dolor sit amet, consectetur adipiscing elit. Diam volutpat,
       rutrum bibendum tincidunt nec velit dictumst. Pellentesque Luspendisse
       ultricies at a nunc, morbi. Amet, varius pulvinar quam fermentum, nulla
@@ -96,11 +96,11 @@ export const ourMission = (
       scelerisque eleifend donec pretium vulputate sapien. Volutpat est velit
       egestas dui id ornare arcu odio.
     </p>
-  </>
+  </div>
 );
 export const ourVision = (
-  <>
-    <p className="paragraphs">
+  <div>
+    <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam volutpat,
       rutrum bibendum tincidunt nec velit dictumst. Pellentesque Luspendisse
       ultricies at a nunc, morbi. Amet, varius pulvinar quam fermentum, nulla
@@ -143,7 +143,7 @@ export const ourVision = (
       eget. Mus mauris vitae ultricies leo integer malesuada. Nunc sed id semper
       risus in hendrerit gravida rutrum.
     </p>
-  </>
+  </div>
 );
 
 const content: Content = {
