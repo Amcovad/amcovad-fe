@@ -36,8 +36,9 @@ const Tab = ({ data }: Data) => {
           {item.split(" ").slice(-1).join(" ")}
         </span>
       </h4>
-
-      {data[item]}
+      <div className="dropcap">
+            {data[item]}
+      </div>
     </div>
   ));
 
@@ -48,7 +49,7 @@ const Tab = ({ data }: Data) => {
           {TabTitles}
         </ul>
 
-        <div className="py-1 dropcap ">{TabContent}</div>
+        <div className="py-1">{TabContent}</div>
       </div>
     </div>
   );
