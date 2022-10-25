@@ -27,7 +27,7 @@ const Button = ({
         "text-white bg-primary-500 hover:bg-primary-600 hover:text-white focus:shadow-primary-xs ",
       secondary:
         "text-white bg-secondary-800 hover:bg-secondary-900 hover:text-white focus:shadow-secondary-xs",
-      "secondary-light":
+      light:
         "text-secondary-500 bg-secondary-50 hover:bg-secondary-100 hover:text-secondary-600 focus:shadow-secondary-xs",
       danger:
         "text-white bg-danger-600 hover:bg-danger-500 hover:text-white focus:shadow-danger-xs",
