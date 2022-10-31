@@ -85,7 +85,6 @@ module.exports = {
         },
         secondary: {
           25: '#F5F6F8',
-          'light': '#E6E8EA',
           100: '#D0D3D8',
           200: '#EBECEE',
           300: '#D6D9DD',
@@ -185,7 +184,8 @@ module.exports = {
         white: '#FFFFFF',
         black: '#000000',
         tertiary: '#0C1A2C',
-        lightgray: '#F5F6F8'
+        lightgray: '#F5F6F8',
+        light: '#E6E8EA',
       }
     }
   },

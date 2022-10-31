@@ -11,6 +11,7 @@ export type ButtonProps = {
 };
 
 export type Sizes = {
+  [key: string]: string;
   xs: string;
   sm: string;
   md: string;
@@ -19,9 +20,10 @@ export type Sizes = {
 };
 
 type ColorType = {
+  [key: string]: string;
   primary: string;
   secondary: string;
-  "secondary-light"?: string;
+  light?: string;
   danger: string;
   warning: string;
   success: string;
