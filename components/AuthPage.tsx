@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
-// import { LogoBlack } from "/public/assets/signUp";
 import Link from "next/link";
 import { StaticImageData } from "next/image";
 

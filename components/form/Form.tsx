@@ -13,6 +13,12 @@ const HookForm = ({
     defaultValues,
     resolver: yupResolver(schema),
   });
+  
+  React.useEffect(() => {
+    if (methods.formState.isSubmitSuccessful) {
+      methods.reset();
+    }
+  }, [methods, methods.formState.isSubmitSuccessful]);
 
   return (
     <FormProvider {...methods}>
