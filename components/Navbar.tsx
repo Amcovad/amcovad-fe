@@ -8,6 +8,18 @@ import NavLink from "./NavLink";
 import navBarLink from "@/data/menu";
 import classNames from "classnames";
 
+type Menus = {
+  children: React.PropsWithChildren<React.ReactNode>;
+  isMenuOpen: boolean;
+};
+type MenuItems = {
+  title: string;
+  url: string;
+};
+
+type Navbars = {
+  authPageOnly: boolean;
+};
 const style = {
   container: `relative top-1/4 w-full text-left pl-16 md:pl-32 mt-8`,
   item: `text-3xl text-white cursor-pointer  hover:secondary-25`,
@@ -19,7 +31,7 @@ const style = {
   },
 };
 
-const Menu = ({ children, isMenuOpen }) => {
+const Menu = ({ children, isMenuOpen }: Menus) => {
   return (
     <div
       className={`${style.menu.default} ${
@@ -31,11 +43,13 @@ const Menu = ({ children, isMenuOpen }) => {
   );
 };
 
-const MenuContainer = ({ children }) => {
+const MenuContainer = ({
+  children,
+}: React.PropsWithChildren<React.ReactNode>) => {
   return <div className={style.container}>{children}</div>;
 };
 
-const MenuItem = ({ title, url }) => {
+const MenuItem = ({ title, url }: MenuItems) => {
   return (
     <div className="p-2">
       <Link href={url} passHref>
@@ -45,7 +59,7 @@ const MenuItem = ({ title, url }) => {
   );
 };
 
-const Navbar = ({ authPageOnly }) => {
+const Navbar = ({ authPageOnly }: Navbars) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
