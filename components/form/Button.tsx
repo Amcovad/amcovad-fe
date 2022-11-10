@@ -41,6 +41,8 @@ const Button = ({
         "text-secondary-600 border border-secondary-600 hover:bg-secondary-600 hover:border-secondary-600 hover:text-white focus:shadow-primary-xs",
       secondary:
         "text-primary-500 border border-primary-500 hover:bg-secondary-600 hover:border-secondary-600 hover:text-white focus:shadow-secondary-xs ",
+      light:
+        "text-secondary-500 bg-secondary-50 hover:bg-secondary-100 hover:text-secondary-600 focus:shadow-secondary-xs",
       danger:
         "text-danger-600 border border-danger-600 hover:bg-danger-500 hover:border-danger-500 hover:text-white focus:shadow-danger-xs ",
       warning:

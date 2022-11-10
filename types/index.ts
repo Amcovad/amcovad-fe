@@ -49,7 +49,7 @@ type ColorType = {
   [key: string]: string;
   primary: string;
   secondary: string;
-  light?: string;
+  light: string;
   danger: string;
   warning: string;
   success: string;

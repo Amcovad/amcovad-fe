@@ -44,9 +44,6 @@ const SignIn = () => {
             </Button>
           </div>
         </HookForm>
-        {/* {errors && (
-          <p className="block pt-2 text-base font-normal text-center text-danger-500 font-Inter ">Error: {errors}</p>
-        )} */}
         <p className="block pt-2 text-center text-base text-secondary-700 font-normal font-Inter ">
           Don’t have account?{" "}
           <Link href="/sign-up">

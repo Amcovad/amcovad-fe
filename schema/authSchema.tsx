@@ -13,7 +13,7 @@ export const SignInSchema: yup.SchemaOf<SignInSchemas> = yup
       .required("Email is required"),
     password: yup
       .string()
-      .required("password is required")
+      .required("Password is required")
       .min(6, "Password must be atleast 6 character long"),
   })
   .required();
