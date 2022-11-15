@@ -4,12 +4,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import Input from "../components/form/Input";
 import HookForm from "../components/form/Form";
 
-import { User, InfoCircle, PasswordCheck, TickCircle } from "iconsax-react";
-
-// const InputStories = {
-//   title: "Components/Input",
-//   component: Input,
-// };
+import { User, InfoCircle, TickCircle } from "iconsax-react";
 
 export default {
   title: "Components/Input",
