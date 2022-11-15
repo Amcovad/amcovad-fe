@@ -98,8 +98,8 @@ const Input = ({
             className,
             { "pl-10 pr-8": leadingIcon },
             {
-              "placeholder-transparent border-secondary-300 appearance-none bg-secondary-25 text-secondary-700 focus:ring-0 peer":
-                floatLabel,
+              "placeholder-transparent border-secondary-300 placeholder:text-secondary-25 focus:placeholder:text-secondary-700  appearance-none bg-secondary-25 text-secondary-700 focus:ring-0 peer placeholder-opacity-0":
+                floatLabel && !placeholder,
             },
             {
               errorClassName: showError(hasErrors, feedBack),
@@ -111,7 +111,7 @@ const Input = ({
               focusClassName: !hasErrors && !isValid,
             },
             {
-              " placeHolderClassName": placeholder,
+              " placeHolderClassName": placeholder && !floatLabel,
             }
           )}
         />

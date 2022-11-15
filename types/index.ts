@@ -4,7 +4,7 @@ export type ButtonProps = {
   color: string;
   icon: JSX.Element | React.ReactNode;
   leftIcon: any;
-  onClick: any;
+  onClick?: () => void;
   outline: boolean;
   rightIcon: any;
   size: string;
