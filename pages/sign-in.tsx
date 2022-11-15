@@ -23,9 +23,9 @@ const SignIn = () => {
       <div className="mt-8">
         <HookForm onSubmit={onSubmit} schema={SignInSchema}>
           <div className="mb-6">
-            <Input label="Email address" name="email" type="email" />
+            <Input label="Email address" name="email" type="email" floatLabel />
           </div>
-          <Input label="Password" name="password" type="password" />
+          <Input label="Password" name="password" type="password" floatLabel />
           <div className="flex items-center  mb-3">
             <Label
               className="mt-[-5px] mb-4 text-sm"

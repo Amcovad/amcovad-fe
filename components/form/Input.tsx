@@ -6,10 +6,11 @@ import { ErrorMessage } from "./ErrorMessage";
 import classNames from "classnames";
 import { showError, showSuccess } from "../../utils/form-helpers";
 import { InputProps } from "@/types/index";
+import ToolTip from "./Tooltip";
 
 const Input = ({
   className,
-  //   toolTipColor,
+  toolTipColor,
   feedBack,
   floatLabel,
   Icon,
@@ -17,11 +18,11 @@ const Input = ({
   labelClassName,
   toolTip,
   hintText,
-  //   showTooltipArrow,
-  //   toolTipTitle,
-  //   toolTipContent,
-  //   toolTipPlacement,
-  //   toolTipIcon,
+  showTooltipArrow,
+  toolTipTitle,
+  toolTipContent,
+  toolTipPlacement,
+  toolTipIcon,
   name,
   placeholder,
   label,
@@ -69,16 +70,16 @@ const Input = ({
           htmlFor={name}
           text={label}
         >
-          {/* {toolTip && (
-              <ToolTip
-                color={toolTipColor}
-                arrow={showTooltipArrow}
-                title={toolTipTitle}
-                content={toolTipContent}
-                placement={toolTipPlacement}
-                toolTipIcon={toolTipIcon}
-              />
-            )} */}
+          {toolTip && (
+            <ToolTip
+              color={toolTipColor}
+              arrow={showTooltipArrow}
+              title={toolTipTitle}
+              content={toolTipContent}
+              placement={toolTipPlacement}
+              toolTipIcon={toolTipIcon}
+            />
+          )}
         </Label>
       )}
       <div className="relative z-0 mb-2 w-full group">
@@ -143,14 +144,14 @@ const Input = ({
                 <InfoCircle size="18px" />
               </div>
             )}
-            {/* <ToolTip
+            <ToolTip
               arrow={showTooltipArrow}
               color={toolTipColor}
               title={toolTipTitle}
               content={toolTipContent}
               placement={toolTipPlacement}
               toolTipIcon={toolTipIcon}
-            /> */}
+            />
           </div>
         )}
         {hasErrors && (

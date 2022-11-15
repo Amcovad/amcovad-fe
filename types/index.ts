@@ -30,12 +30,48 @@ export type InputProps = {
   toolTip: boolean;
   hintText: string;
   name: string;
+  showTooltipArrow: boolean;
   text: any;
+  toolTipColor: string;
+  toolTipTitle: string;
+  toolTipContent: string;
+  toolTipPlacement: any;
+  toolTipIcon: JSX.Element | React.ReactNode;
   placeholder: string;
   label: string;
   type: string;
 };
 
+type placements =
+  | "top"
+  | "bottom"
+  | "right"
+  | "left"
+  | "bottomStart"
+  | "bottomEnd"
+  | "topStart"
+  | "topEnd"
+  | "leftStart"
+  | "rightStart"
+  | "leftEnd"
+  | "rightEnd"
+  | "auto"
+  | "autoVertical"
+  | "autoVerticalStart"
+  | "autoVerticalEnd"
+  | "autoHorizontal"
+  | "autoHorizontalStart"
+  | "autoHorizontalEnd";
+
+export type ToolTipProps = {
+  arrow: boolean;
+  children: JSX.Element | React.ReactNode;
+  color: string;
+  content: string;
+  placement: placements;
+  toolTipIcon: JSX.Element | React.ReactNode;
+  title: string;
+};
 export type Sizes = {
   [key: string]: string;
   xs: string;
