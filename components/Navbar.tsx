@@ -18,7 +18,7 @@ type MenuItems = {
 };
 
 type Navbars = {
-  authPageOnly: boolean;
+  isAuthPage: boolean;
 };
 const style = {
   container: `relative top-1/4 w-full text-left pl-16 md:pl-32 mt-8`,
@@ -59,7 +59,7 @@ const MenuItem = ({ title, url }: MenuItems) => {
   );
 };
 
-const Navbar = ({ authPageOnly }: Navbars) => {
+const Navbar = ({ isAuthPage }: Navbars) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -83,35 +83,35 @@ const Navbar = ({ authPageOnly }: Navbars) => {
         "z-50 outline-[5px]",
         {
           "fixed lg:border-b lg:border-primary-200 2xl:mx-auto w-full":
-            !authPageOnly,
+            !isAuthPage,
         },
         {
-          "lg:hidden w-screen": authPageOnly,
+          "lg:hidden w-screen": isAuthPage,
         }
       )}
     >
       <div
         className={classNames(
           "py-2 mx-auto px-4 md:max-w-full lg:px-8",
-          { "mobile-bg lg:bg-secondary-25 md:px-20 2xl:px-60": !authPageOnly },
+          { "mobile-bg lg:bg-secondary-25 md:px-20 2xl:px-60": !isAuthPage },
           {
-            "mobile-bg sm:max-w-xl lg:max-w-screen-xl md:px-24": authPageOnly,
+            "mobile-bg sm:max-w-xl lg:max-w-screen-xl md:px-24": isAuthPage,
           }
         )}
       >
         <div
           className={classNames(
             "relative flex items-center justify-between",
-            { "lg:pl-8 lg:pr-16 pt-1.5": !authPageOnly },
+            { "lg:pl-8 lg:pr-16 pt-1.5": !isAuthPage },
             {
-              "lg:px-20 mt-5": authPageOnly,
+              "lg:px-20 mt-5": isAuthPage,
             }
           )}
         >
           <Link href="/" passHref>
             <a
               className={classNames(
-                { "xl:pl-11": !authPageOnly },
+                { "xl:pl-11": !isAuthPage },
                 "inline-flex items-center cursor-pointer "
               )}
             >
@@ -199,7 +199,7 @@ const Navbar = ({ authPageOnly }: Navbars) => {
 };
 
 Navbar.defaultProps = {
-  authPageOnly: false,
+  isAuthPage: false,
 };
 
 export default Navbar;

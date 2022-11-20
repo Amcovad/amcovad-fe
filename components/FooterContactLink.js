@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import React from 'react'
 import Link from 'next/link';
 
@@ -25,8 +24,6 @@ const FooterContactLink = ({ icon, link, name }) => {
                         {name}
                     </p>
                 }
-
-
             </div>
         </li>
     )

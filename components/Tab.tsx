@@ -36,21 +36,17 @@ const Tab = ({ data }: Data) => {
           {item.split(" ").slice(-1).join(" ")}
         </span>
       </h4>
-      <div className="dropcap">
-            {data[item]}
-      </div>
+      <div className="dropcap">{data[item]}</div>
     </div>
   ));
 
   return (
-    <div>
-      <div className=" py-6 px-2 lg:py-12 mx-auto lg:max-w-2xl">
-        <ul className="flex flex-wrap justify-start lg:space-x-5 list-none border-b-[2px] border-[#C4C4C4]">
-          {TabTitles}
-        </ul>
+    <div className=" py-6 px-2 lg:py-12 mx-auto lg:max-w-2xl">
+      <ul className="flex flex-wrap justify-start lg:space-x-5 list-none border-b-[2px] border-[#C4C4C4]">
+        {TabTitles}
+      </ul>
 
-        <div className="py-1">{TabContent}</div>
-      </div>
+      <div className="py-1">{TabContent}</div>
     </div>
   );
 };
