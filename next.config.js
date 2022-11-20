@@ -2,6 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  images: {
+    domains: ['images.unsplash.com'],
+    formats: ['image/webp']
+  }
 }
 
 module.exports = nextConfig
