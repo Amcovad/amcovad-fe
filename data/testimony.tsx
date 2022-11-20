@@ -10,7 +10,7 @@ const Testimony: Testimonys[] = [
     name: "Al-Amanah Click",
     rating: 4.5,
     testimony: (
-      <div>
+      <>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elitousubui.
           Faucibus facilisi ac vivamus quisque nunc tincidunt donec faucibus.
@@ -23,7 +23,7 @@ const Testimony: Testimonys[] = [
           suspendisse felis, sollicitudin nisl. Suspendisse id fermentum varius
           cursus
         </p>
-      </div>
+      </>
     ),
   },
   {
@@ -31,7 +31,7 @@ const Testimony: Testimonys[] = [
     name: "Al-Amanah Click",
     rating: 4.5,
     testimony: (
-      <div>
+      <>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elitousubui.
           Faucibus facilisi ac vivamus quisque nunc tincidunt donec faucibus.
@@ -44,7 +44,7 @@ const Testimony: Testimonys[] = [
           suspendisse felis, sollicitudin nisl. Suspendisse id fermentum varius
           cursus
         </p>
-      </div>
+      </>
     ),
   },
   {
@@ -52,7 +52,7 @@ const Testimony: Testimonys[] = [
     name: "Al-Amanah Click",
     rating: 4.5,
     testimony: (
-      <div>
+      <>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elitousubui.
           Faucibus facilisi ac vivamus quisque nunc tincidunt donec faucibus.
@@ -65,7 +65,7 @@ const Testimony: Testimonys[] = [
           suspendisse felis, sollicitudin nisl. Suspendisse id fermentum varius
           cursus
         </p>
-      </div>
+      </>
     ),
   },
 ];
