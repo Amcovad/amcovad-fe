@@ -16,7 +16,7 @@ const AuthPage = ({ children, image, imagealt, text, title }: AuthPages) => {
     <section className="w-full 2xl:m-auto  2xl:container">
       <div className="lg:bg-primary-500 overflow-y-scroll  max-w-full h-screen">
         <div className="bg-cover bg-[url('/assets/signUp/md-hexagons.png')] bg-top bg-opacity-20 lg:bg-[url('/assets/signUp/hexagons.png')]">
-          <Navbar authPageOnly />
+          <Navbar isAuthPage />
           <div className="flex justify-center ">
             <div className="flex flex-col justify-center flex-1 px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24 ">
               <div className="w-full max-w-[43rem] lg:w-[38rem]  mx-auto pt-5 lg:pt-0 ">
