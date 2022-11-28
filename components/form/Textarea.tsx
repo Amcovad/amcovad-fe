@@ -1,61 +1,36 @@
-import React, { useState } from "react";
+import React from "react";
 import { useFormContext } from "react-hook-form";
-import { EyeSlash, InfoCircle, PasswordCheck, TickCircle } from "iconsax-react";
 import { Label } from "./Label";
 import { ErrorMessage } from "./ErrorMessage";
 import classNames from "classnames";
-import { showError, showSuccess } from "../../utils/form-helpers";
-import { InputProps } from "@/types/index";
-import ToolTip from "./Tooltip";
+import { showError, showSuccess } from "@/utils/form-helpers";
+import ToolTip from "@/components/form/Tooltip";
+import { InfoCircle, TickCircle } from "iconsax-react";
+import { TextAreaProps } from "@/types/index";
 
-const Input = ({
+const Textarea = ({
   className,
-  toolTipColor,
-  feedBack,
   floatLabel,
-  Icon,
+  feedBack,
+  label,
   leadingIcon,
   labelClassName,
+  name,
+  placeholder,
+  rows,
   toolTip,
   hintText,
   showTooltipArrow,
   toolTipTitle,
   toolTipContent,
+  toolTipColor,
   toolTipPlacement,
   toolTipIcon,
-  name,
-  placeholder,
-  label,
-  type,
-}: InputProps) => {
+}: TextAreaProps) => {
   const {
     register,
     formState: { dirtyFields, errors },
   } = useFormContext();
-
-  const [showPassword, setShowPassword] = useState(false);
-
-  const handleShowPassword = () => {
-    setShowPassword((show) => !show);
-  };
-
-  const PasswordIcon = showPassword ? (
-    <EyeSlash
-      size="18px"
-      color="#A9ABAD"
-      variant="Bold"
-      onClick={handleShowPassword}
-    />
-  ) : (
-    <PasswordCheck
-      size="18px"
-      color="#A9ABAD"
-      variant="Bold"
-      onClick={handleShowPassword}
-    />
-  );
-  const isPasswordField = type === "password";
-  const inputIcon = isPasswordField ? PasswordIcon : Icon;
 
   const hasErrors = !!errors?.[name];
   const isValid = !!dirtyFields?.[name] && !hasErrors;
@@ -72,36 +47,36 @@ const Input = ({
         >
           {toolTip && (
             <ToolTip
-              color={toolTipColor}
               arrow={showTooltipArrow}
               title={toolTipTitle}
               content={toolTipContent}
               placement={toolTipPlacement}
+              color={toolTipColor}
               toolTipIcon={toolTipIcon}
             />
           )}
         </Label>
       )}
+
       <div className="relative z-0 mb-2 w-full group">
         {leadingIcon && (
-          <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+          <div className="absolute top-5 left-0 flex items-center pl-3 pointer-events-none">
             {leadingIcon}
           </div>
         )}
-        <input
+        <textarea
+          rows={rows}
           placeholder={placeholder ? placeholder : label}
-          type={isPasswordField ? (showPassword ? "text" : "password") : type}
-          id={name}
           {...register(name)}
           className={classNames(
             "block py-3.5 px-1 w-full text-base bg-secondary-25 border-secondary-100 border-2 rounded-md focus:outline-none focus:ring-0 peer",
             className,
             { "pl-10 pr-8": leadingIcon },
             {
-              "placeholder-transparent border-secondary-300 placeholder:text-secondary-25 focus:placeholder:text-secondary-700  appearance-none bg-secondary-25 text-secondary-700 focus:ring-0 peer placeholder-opacity-0":
-                floatLabel && !placeholder,
+              "placeholder-transparent border-secondary-300 appearance-none bg-secondary-25 text-secondary-700 focus:ring-0 peer":
+                floatLabel,
             },
-            {'pl-2':!leadingIcon && !floatLabel},
+            { "pl-2": !leadingIcon && !floatLabel },
             {
               errorClassName: showError(hasErrors, feedBack),
             },
@@ -112,16 +87,17 @@ const Input = ({
               focusClassName: !hasErrors && !isValid,
             },
             {
-              " placeHolderClassName": placeholder && !floatLabel,
+              " placeHolderClassName": placeholder,
             }
           )}
-        />
+        ></textarea>
+
         {floatLabel && (
           <Label
             name={name}
             feedBack={feedBack}
             htmlFor={name}
-            floatLabel={floatLabel}
+            floatLabel
             text={label}
             floatLabelClass={labelClassName}
           />
@@ -130,21 +106,12 @@ const Input = ({
         {toolTip && floatLabel && (
           <div
             className={classNames(
-              "absolute right-0 flex items-center inset-y-0",
+              "absolute right-0 flex items-center top-5",
+              { "pr-3": !isValid && !hasErrors },
               { "pr-8": hasErrors },
-              { hidden: isValid },
-              { "pr-3": !isValid && !hasErrors }
+              { hidden: isValid }
             )}
           >
-            {hasErrors && (
-              <div
-                className={classNames(
-                  "absolute right-0 flex items-center pointer-events-none inset-y-0 pr-3"
-                )}
-              >
-                <InfoCircle size="18px" />
-              </div>
-            )}
             <ToolTip
               arrow={showTooltipArrow}
               color={toolTipColor}
@@ -155,10 +122,14 @@ const Input = ({
             />
           </div>
         )}
+
         {hasErrors && (
           <div
             className={classNames(
-              "absolute right-0 flex items-center text-danger-500 pointer-events-none inset-y-0 pr-3"
+              "absolute right-0 flex items-center text-danger-500 pointer-events-none top-5",
+              {
+                "pr-3": hasErrors,
+              }
             )}
           >
             <InfoCircle size="18px" />
@@ -169,27 +140,17 @@ const Input = ({
           (feedBack === "FEEDBACK.SUCCESS" || feedBack === "FEEDBACK.ALL") && (
             <div
               className={classNames(
-                "absolute right-0 flex items-center text-success-500 pointer-events-none inset-y-0 pr-3"
+                "absolute right-0 flex items-center text-success-500 pointer-events-none top-5",
+                {
+                  "pr-3": isValid,
+                }
               )}
             >
               <TickCircle size="18px" />
             </div>
           )}
-
-        {inputIcon && !isValid && (
-          <div
-            className={classNames(
-              "absolute inset-y-0 right-0 flex items-center cursor-pointer",
-              { "pr-3": !isValid && !hasErrors },
-              {
-                "pr-9": hasErrors,
-              }
-            )}
-          >
-            {inputIcon}
-          </div>
-        )}
       </div>
+
       {hintText && (
         <p className="pt-1 text-sm text-secondary-700">{hintText}</p>
       )}
@@ -198,11 +159,13 @@ const Input = ({
   );
 };
 
-Input.defaultProps = {
+Textarea.defaultProps = {
+  className: null,
   feedBack: "FEEDBACK.ALL",
   label: null,
-  type: "text",
+  rows: "3",
+  labelClassName:
+    "bg-secondary-25 peer-focus:bg-secondary-25 -translate-y-7 peer-focus:-translate-y-7",
   placeholder: null,
-  Icon: null,
 };
-export default Input;
+export default Textarea;
