@@ -39,7 +39,7 @@ const SignIn = () => {
             />
           </div>
           <div>
-            <Button className="w-full font-semibold text-black py-2.5 px-5">
+            <Button className="w-full !font-bold text-black uppercase py-2.5 px-5">
               Sign in
             </Button>
           </div>

@@ -59,3 +59,47 @@ Label.defaultProps = {
   name: null,
   text: null,
 };
+
+type LabelProps = {
+    checked?: boolean;
+    helperLabelClassName: string;
+    htmlFor: string;
+    name: string;
+    text: any;
+    title: any;
+  
+};
+
+export const HelperLabel = ({ checked, helperLabelClassName, htmlFor, name, text, title }) => {
+  return (
+    <div className="ml-2 pt-2 text-sm font-Inter">
+      {title && (
+        <label
+          htmlFor={htmlFor || name}
+          className={classNames(
+            'font-semibold text-secondary-800 ',
+            { 'pointer-events-none': checked },
+            helperLabelClassName
+          )}
+        >
+          {title}
+        </label>
+      )}
+      {text && (
+        <p id={htmlFor || name} className="text-xs font-normal text-secondary-600 ">
+          {text}
+        </p>
+      )}
+    </div>
+  );
+};
+
+
+
+HelperLabel.defaultProps = {
+  helperLabelClassName: null,
+  htmlFor: null,
+  name: null,
+  text: null,
+  title: null
+};

@@ -54,8 +54,11 @@
 .form-radio:disabled {
   @apply border-secondary-100 bg-secondary-25;
 }
-.form-checkbox:checked:hover {
+.form-checkbox:checked {
   @apply border-primary-500 bg-primary-25;
+}
+.form-checkbox:checked:hover {
+  @apply border-primary-600 bg-primary-25;
 }
 .form-checkbox:disabled:hover,
 .form-radio:disabled:hover {
