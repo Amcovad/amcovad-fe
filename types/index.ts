@@ -42,6 +42,27 @@ export type InputProps = {
   type: string;
 };
 
+export type TextAreaProps = {
+  className: string;
+  feedBack: string;
+  floatLabel: boolean;
+  leadingIcon: any;
+  label: string;
+  labelClassName: string;
+  toolTip: boolean;
+  hintText: string;
+  name: string;
+  showTooltipArrow: boolean;
+  text: any;
+  toolTipColor: string;
+  toolTipTitle: string;
+  toolTipContent: string;
+  toolTipPlacement: placements;
+  toolTipIcon: JSX.Element | React.ReactNode;
+  placeholder: string;
+  rows: number;
+};
+
 type placements =
   | "top"
   | "bottom"
