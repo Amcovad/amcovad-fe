@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import classNames from "classnames";
+import AccordionLayout from "@/components/Accordion/Accordion";
 
 type Data = {
   data?: any;
 };
 
-const Tab = ({ data }: Data) => {
+const TabWithAccordion = ({ data }: Data) => {
   const [visibleTab, setVisibleTab] = useState(0);
 
   const TabTitles = Object.keys(data).map((title, index) => (
@@ -15,7 +16,7 @@ const Tab = ({ data }: Data) => {
       className={classNames(
         "inline-block text-sm font-Inter font-medium p-4 lg:p-3 text-black cursor-pointer ",
         {
-          "border-b-[4px] border-primary-400 rounded-sm mb-[-2.5px] text-primary-400":
+          "border-b-[4px] border-primary-400 rounded-sm mb-[-3px] text-primary-400":
             visibleTab === index,
         }
       )}
@@ -31,17 +32,16 @@ const Tab = ({ data }: Data) => {
       style={visibleTab === index ? {} : { display: "none" }}
     >
       <h4 className="font-RozhaOne my-3 text-2xl lg:text-4xl text-black">
-        {item.split(" ").slice(0, -1).join(" ")}{" "}
-        <span className="text-primary-500">
-          {item.split(" ").slice(-1).join(" ")}
-        </span>
+        {item}
       </h4>
-      <div className="dropcap">{data[item]}</div>
+      <div className="flex flex-col justify-center items-center w-full">
+        <AccordionLayout options={data[item]} />
+      </div>
     </div>
   ));
 
   return (
-    <div className=" py-6 px-2 lg:py-12 mx-auto lg:max-w-2xl">
+    <div className=" py-6 px-2 lg:py-12 mx-auto lg:max-w-4xl">
       <ul className="flex flex-wrap justify-start lg:space-x-5 list-none border-b-[2px] border-[#C4C4C4]">
         {TabTitles}
       </ul>
@@ -51,4 +51,4 @@ const Tab = ({ data }: Data) => {
   );
 };
 
-export default Tab;
+export default TabWithAccordion;

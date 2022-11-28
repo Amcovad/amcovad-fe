@@ -42,7 +42,7 @@ export type InputProps = {
   type: string;
 };
 
-type placments =
+type placements =
   | "top"
   | "bottom"
   | "right"
@@ -68,7 +68,7 @@ export type ToolTipProps = {
   children: JSX.Element | React.ReactNode;
   color: string;
   content: string;
-  placement: placments;
+  placement: placements;
   toolTipIcon: JSX.Element | React.ReactNode;
   title: string;
 };
