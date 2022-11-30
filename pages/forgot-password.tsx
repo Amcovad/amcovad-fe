@@ -25,7 +25,7 @@ const ForgotPassword = () => {
             <Input label="Email address" name="email" type="email" />
           </div>
 
-          <Button className="w-full !font-bold text-black uppercase py-2.5 px-5">
+          <Button className="w-full uppercase">
             Reset Password{" "}
           </Button>
         </HookForm>

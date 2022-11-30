@@ -7,6 +7,7 @@ import { showError, showSuccess } from "@/utils/form-helpers";
 import ToolTip from "@/components/form/Tooltip";
 import { InfoCircle, TickCircle } from "iconsax-react";
 import { TextAreaProps } from "@/types/index";
+import { FEEDBACK } from "@/utils/constant";
 
 const Textarea = ({
   className,
@@ -39,7 +40,7 @@ const Textarea = ({
     <>
       {label && !floatLabel && (
         <Label
-          feedBack="FEEDBACK.NONE"
+          feedBack={FEEDBACK.NONE}
           className="text-base flex items-center gap-x-2"
           name={name}
           htmlFor={name}

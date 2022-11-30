@@ -2,7 +2,7 @@ export type ButtonProps = {
   className: string;
   children: any;
   color: string;
-  icon: JSX.Element | React.ReactNode;
+  icon?: JSX.Element | React.ReactNode;
   leftIcon: any;
   onClick?: () => void;
   outline: boolean;
@@ -86,11 +86,11 @@ type placements =
 
 export type ToolTipProps = {
   arrow: boolean;
-  children: JSX.Element | React.ReactNode;
+  children?: JSX.Element | React.ReactNode;
   color: string;
   content: string;
   placement: placements;
-  toolTipIcon: JSX.Element | React.ReactNode;
+  toolTipIcon?: JSX.Element | React.ReactNode;
   title: string;
 };
 export type Sizes = {

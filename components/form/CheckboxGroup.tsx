@@ -3,6 +3,7 @@ import { useFormContext } from "react-hook-form";
 import { Label, HelperLabel } from "./Label";
 import { ErrorMessage } from "./ErrorMessage";
 import classNames from "classnames";
+import { FEEDBACK } from "@/utils/constant";
 
 type CheckboxProps = {
   checked: boolean;
@@ -76,7 +77,7 @@ export function Checkbox({
           <Label
             name={name}
             className="ml-2 mb-1 "
-            feedBack="FEEDBACK.NONE"
+            feedBack={FEEDBACK.NONE}
             htmlFor={`checkbox-${name}-${value.toString()}`}
             text={label}
             checked={checked}
