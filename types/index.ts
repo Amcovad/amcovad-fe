@@ -2,7 +2,7 @@ export type ButtonProps = {
   className: string;
   children: any;
   color: string;
-  icon: JSX.Element | React.ReactNode;
+  icon?: JSX.Element | React.ReactNode;
   leftIcon: any;
   onClick?: () => void;
   outline: boolean;
