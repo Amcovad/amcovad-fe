@@ -2,7 +2,7 @@ export type ButtonProps = {
   className: string;
   children: any;
   color: string;
-  icon: JSX.Element | React.ReactNode;
+  icon?: JSX.Element | React.ReactNode;
   leftIcon: any;
   onClick?: () => void;
   outline: boolean;
@@ -21,22 +21,22 @@ export type LabelProps = {
   text: any;
 };
 export type InputProps = {
-  className: string;
+  className?: string;
   feedBack: string;
-  floatLabel: boolean;
+  floatLabel?: boolean;
   Icon: JSX.Element | React.ReactNode;
-  leadingIcon: any;
-  labelClassName: string;
-  toolTip: boolean;
-  hintText: string;
+  leadingIcon?: any;
+  labelClassName?: string;
+  toolTip?: boolean;
+  hintText?: string;
   name: string;
-  showTooltipArrow: boolean;
-  text: any;
-  toolTipColor: string;
-  toolTipTitle: string;
-  toolTipContent: string;
-  toolTipPlacement: any;
-  toolTipIcon: JSX.Element | React.ReactNode;
+  showTooltipArrow?: boolean;
+  text?: any;
+  toolTipColor?: string;
+  toolTipTitle?: string;
+  toolTipContent?: string;
+  toolTipPlacement?: placements;
+  toolTipIcon?: JSX.Element | React.ReactNode;
   placeholder: string;
   label: string;
   type: string;
@@ -86,11 +86,11 @@ type placements =
 
 export type ToolTipProps = {
   arrow: boolean;
-  children: JSX.Element | React.ReactNode;
+  children?: JSX.Element | React.ReactNode;
   color: string;
   content: string;
   placement: placements;
-  toolTipIcon: JSX.Element | React.ReactNode;
+  toolTipIcon?: JSX.Element | React.ReactNode;
   title: string;
 };
 export type Sizes = {
