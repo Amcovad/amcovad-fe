@@ -7,6 +7,7 @@ import classNames from "classnames";
 import { showError, showSuccess } from "../../utils/form-helpers";
 import { InputProps } from "@/types/index";
 import ToolTip from "./Tooltip";
+import { FEEDBACK } from "@/utils/constant";
 
 const Input = ({
   className,
@@ -64,7 +65,7 @@ const Input = ({
     <>
       {label && !floatLabel && (
         <Label
-          feedBack="FEEDBACK.NONE"
+          feedBack={FEEDBACK.NONE}
           className="text-base flex items-center gap-x-2"
           name={name}
           htmlFor={name}
@@ -101,7 +102,7 @@ const Input = ({
               "placeholder-transparent border-secondary-300 placeholder:text-secondary-25 focus:placeholder:text-secondary-700  appearance-none bg-secondary-25 text-secondary-700 focus:ring-0 peer placeholder-opacity-0":
                 floatLabel && !placeholder,
             },
-            {'pl-2':!leadingIcon && !floatLabel},
+            { "pl-2": !leadingIcon && !floatLabel },
             {
               errorClassName: showError(hasErrors, feedBack),
             },
