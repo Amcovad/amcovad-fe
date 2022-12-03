@@ -6,19 +6,29 @@ import classNames from "classnames";
 import { FEEDBACK } from "@/utils/constant";
 
 type CheckboxProps = {
-  checked: boolean;
+  checked?: boolean;
   checkboxClassName: string;
   containerClassName: string;
   description: string;
-  disabled: boolean;
-  helperLabel: boolean;
+  disabled?: boolean;
+  helperLabel?: boolean;
   helperLabelClassName: string;
   label: string;
   name: string;
   size: string;
-  value: any;
+  value?: any;
 };
 
+type sizeType = {
+  [key: string]: string;
+  sm: string;
+  md: string;
+};
+
+type iconNameType = {
+  checked: sizeType;
+  "disabled-checked": sizeType;
+};
 export function Checkbox({
   checked,
   checkboxClassName,
@@ -32,14 +42,14 @@ export function Checkbox({
   size,
   value,
 }: CheckboxProps) {
-  const iconName = {
+  const iconName: iconNameType = {
     checked: {
-      sm: "bg-checked-sm",
-      md: "bg-checked-md",
+      sm: "checked:bg-checked-sm",
+      md: "checked:bg-checked-md",
     },
     "disabled-checked": {
-      sm: "bg-checked-sm-disabled",
-      md: "bg-checked-md-disabled",
+      sm: "disabled:bg-checked-sm-disabled",
+      md: "disabled:bg-checked-md-disabled",
     },
   };
 
@@ -62,12 +72,15 @@ export function Checkbox({
             checked={checked}
             disabled={disabled}
             id={`checkbox-${name}-${value.toString()}`}
-            className={`form-checkbox ${
-              disabled || (disabled && checked)
-                ? `disabled:${iconName[iconClass][size]}`
-                : `checked:${iconName[iconClass][size]}`
-            }
-            ${size === "md" ? "w-5 h-5" : "w-4 h-4"} ${checkboxClassName}`}
+            className={classNames(
+              "form-checkbox",
+              {
+                "w-5 h-5": size === "md",
+                "w-4 h-4": size !== "md",
+              },
+              iconName[iconClass][size],
+              checkboxClassName
+            )}
             type="checkbox"
             {...register(name)}
             value={value}
@@ -113,14 +126,14 @@ Checkbox.defaultProps = {
 };
 
 type CheckboxGroupProps = {
-  checked: boolean;
-  checkboxClassName: string;
-  description: string;
-  disabled: boolean;
-  helperLabel: boolean;
+  checked?: boolean;
+  checkboxClassName?: string;
+  description?: string;
+  disabled?: boolean;
+  helperLabel?: boolean;
   name: string;
   options: any;
-  size: string;
+  size?: string;
 };
 export function CheckboxGroup({
   checked,

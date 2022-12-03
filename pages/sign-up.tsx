@@ -92,9 +92,7 @@ const SignIn = () => {
           </div>
 
           <div>
-            <Button className="w-full uppercase">
-              Create account
-            </Button>
+            <Button className="w-full uppercase">Create account</Button>
           </div>
 
           <p className="block pt-2 text-center text-base text-secondary-700 font-normal font-Inter ">
