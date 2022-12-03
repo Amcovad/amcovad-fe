@@ -12,41 +12,42 @@ import ActivityFeedCard from "@/components/dashboard/component/card/ActivityFeed
 import SuggestedFeedCard from "@/components/dashboard/component/card/SuggestedFeedCard";
 import TimelineCard from "@/components/dashboard/component/card/TimelineCard";
 
+export const SideWidgetComponents = () => {
+  return (
+    <>
+      <div className="hidden lg:block">
+        <AttentionCard />
+
+        <WidgetCard title="Activity Feed">
+          <ActivityFeedCard />
+          <ActivityFeedCard />
+          <ActivityFeedCard />
+        </WidgetCard>
+      </div>
+      <div className=" mb-10 lg:mb-[156px]">
+        <WidgetCard title="Suggested for you">
+          {suggestedFeedData.map(({ subTitle, image, title, url }, index) => {
+            return (
+              <SuggestedFeedCard
+                key={index}
+                subTitle={subTitle}
+                title={title}
+                image={image}
+                url={url}
+              />
+            );
+          })}
+        </WidgetCard>
+      </div>
+    </>
+  );
+};
 function Dashboard() {
   return (
     <>
       <DashboardLayout
         title="Welcome Haruna,"
-        sideWidget={
-          <>
-            <div className="hidden lg:block">
-              <AttentionCard />
-
-              <WidgetCard title="Activity Feed">
-                <ActivityFeedCard />
-                <ActivityFeedCard />
-                <ActivityFeedCard />
-              </WidgetCard>
-            </div>
-            <div className=" mb-10 lg:mb-[156px]">
-              <WidgetCard title="Suggested for you">
-                {suggestedFeedData.map(
-                  ({ subTitle, image, title, url }, index) => {
-                    return (
-                      <SuggestedFeedCard
-                        key={index}
-                        subTitle={subTitle}
-                        title={title}
-                        image={image}
-                        url={url}
-                      />
-                    );
-                  }
-                )}
-              </WidgetCard>
-            </div>
-          </>
-        }
+        sideWidget={<SideWidgetComponents />}
       >
         <>
           <NewFriendToast />

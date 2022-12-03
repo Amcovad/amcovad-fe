@@ -47,7 +47,7 @@ const DashboardLayout = ({
                 { "lg:w-[78%]": !sideWidget }
               )}
             >
-              <div className=" relative">
+              <div className=" relative lg:pl-4 lg:pr-2">
                 <Alert type={type} message={message} />
                 <h1 className="text-2xl pl-3 lg:pl-0 leading-9 font-Poppins mb-5 mt-3 lg:text-3xl lg:font-Inter lg:leading-10 font-bold text-secondary-800 ">
                   {title}
