@@ -3,7 +3,6 @@ import Link from "next/link";
 import Button from "@/components/form/Button";
 import Input from "@/components/form/Input";
 import { CheckboxGroup } from "@/components/form/CheckboxGroup";
-import { Label } from "@/components/form/Label";
 import HookForm from "@/components/form/Form";
 import SignUpImage from "../public/assets/signUp/signup.png";
 import { SignUpSchema } from "../schema/authSchema";
