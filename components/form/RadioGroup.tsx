@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { useFormContext } from "react-hook-form";
 import { Label, HelperLabel } from "./Label";
 import { ErrorMessage } from "./ErrorMessage";
@@ -13,9 +12,9 @@ type RadioProps = {
   helperLabel?: boolean;
   helperLabelClassName: string;
   label: string;
-  name: string;
-  radioClassName: string;
-  size: string;
+  name?: string;
+  radioClassName?: string;
+  size?: string;
   value?: any;
 };
 
