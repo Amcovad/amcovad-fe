@@ -9,56 +9,50 @@ export type ButtonProps = {
   rightIcon: any;
   size: string;
 };
-export type LabelProps = {
-  className: string;
-  checked?: boolean;
-  children?: any;
-  feedBack: string;
-  floatLabel: boolean;
-  floatLabelClass: string;
-  htmlFor: string;
-  name: string;
-  text: any;
-};
-export type InputProps = {
+
+export type CommonTypes = {
   className?: string;
   feedBack: string;
   floatLabel?: boolean;
-  Icon: JSX.Element | React.ReactNode;
-  leadingIcon?: any;
-  labelClassName?: string;
-  toolTip?: boolean;
-  hintText?: string;
-  name: string;
+  name?: string;
+};
+
+export type TooltipTypes = {
   showTooltipArrow?: boolean;
-  text?: any;
   toolTipColor?: string;
   toolTipTitle?: string;
   toolTipContent?: string;
   toolTipPlacement?: placements;
   toolTipIcon?: JSX.Element | React.ReactNode;
+};
+
+type LabelTypes = {
+  checked?: boolean;
+  children?: any;
+  floatLabelClass: string;
+  htmlFor: string;
+  text: any;
+};
+
+type InputTypes = {
+  Icon: JSX.Element | React.ReactNode;
+  leadingIcon?: JSX.Element | React.ReactNode;
+  labelClassName?: string;
+  toolTip?: boolean;
+  hintText?: string;
+  text?: any;
   placeholder: string;
   label: string;
   type: string;
 };
 
-export type TextAreaProps = {
-  className: string;
-  feedBack: string;
-  floatLabel: boolean;
-  leadingIcon: any;
+type TextAreaTypes = {
+  leadingIcon?: JSX.Element | React.ReactNode;
   label: string;
   labelClassName: string;
   toolTip: boolean;
   hintText: string;
-  name: string;
-  showTooltipArrow: boolean;
   text: any;
-  toolTipColor: string;
-  toolTipTitle: string;
-  toolTipContent: string;
-  toolTipPlacement: placements;
-  toolTipIcon: JSX.Element | React.ReactNode;
   placeholder: string;
   rows: number;
 };
@@ -84,14 +78,31 @@ type placements =
   | "autoHorizontalStart"
   | "autoHorizontalEnd";
 
+type SelectFieldTypes = {
+  children?: any[];
+  containerClassName?: string;
+  label?: string;
+  labelClassName?: string;
+  leadingIcon?: JSX.Element | React.ReactNode;
+  toolTip?: boolean;
+  hintText?: string;
+};
+export type LabelProps = LabelTypes & CommonTypes;
+
+export type InputProps = InputTypes & CommonTypes & TooltipTypes;
+
+export type TextAreaProps = TextAreaTypes & CommonTypes & TooltipTypes;
+
+export type SelectFieldProps = SelectFieldTypes & CommonTypes & TooltipTypes;
+
 export type ToolTipProps = {
-  arrow: boolean;
+  arrow?: boolean;
   children?: JSX.Element | React.ReactNode;
-  color: string;
-  content: string;
-  placement: placements;
+  color?: string;
+  content?: string;
+  placement?: placements;
   toolTipIcon?: JSX.Element | React.ReactNode;
-  title: string;
+  title?: string;
 };
 export type Sizes = {
   [key: string]: string;
