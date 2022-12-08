@@ -76,20 +76,20 @@ input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px #f5f6f8 inset !important;
 }
 
-/* Form errorClassName */
+/* Form "has-error-className" */
 
-.errorClassName {
+.has-error-className {
   @apply border-danger-500 focus:border-danger-200 focus:ring-danger-200 focus:shadow-danger-xs;
 }
 
-.successClassName {
+.has-success-className {
   @apply border-success-500 focus:border-success-200 focus:ring-success-200 focus:shadow-success-xs;
 }
 
-.focusClassName {
+.has-focus-className {
   @apply focus:border-primary-200 focus:ring-primary-200 focus:shadow-primary-sm;
 }
 
-.placeHolderClassName {
+.has-placeHolder-className {
   @apply border-secondary-300 bg-secondary-25 placeholder:text-secondary-700 text-secondary-700;
 }

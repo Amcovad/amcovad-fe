@@ -81,13 +81,13 @@ export function SelectField({
                 floatLabel,
             },
             {
-              errorClassName: showError(hasErrors, feedBack),
+              "has-error-className": showError(hasErrors, feedBack),
             },
             {
-              successClassName: showSuccess(isValid, feedBack),
+              "has-success-className": showSuccess(isValid, feedBack),
             },
             {
-              focusClassName: !hasErrors && !isValid,
+              "has-focus-className": !hasErrors && !isValid,
             }
           )}
         >
