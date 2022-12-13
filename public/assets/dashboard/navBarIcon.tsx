@@ -67,3 +67,28 @@ export const XIcon = (props: any) => {
     </svg>
   );
 };
+
+export const MultiplyIcon = (props: any) => (
+  <svg
+    width={12}
+    height={12}
+    viewBox="0 0 12 12"
+    stroke="currentColor"
+    {...props}
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M3.25 9.25L9.25 3.25"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M9.25 9.25L3.25 3.25"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
