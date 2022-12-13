@@ -139,27 +139,32 @@ const RadioGroup = ({
       <div
         className={classNames("flex flex-wrap ", { "flex-col gap-2": columns })}
       >
-        {options.map(({ label, value }, index) => {
-          if (!value && !label) return null;
-          const optionLabel = label || value;
-          const optionValue = value || label;
+        {options.map(
+          (
+            { label, value }: { label: string; value: string },
+            index: number
+          ) => {
+            if (!value && !label) return null;
+            const optionLabel = label || value;
+            const optionValue = value || label;
 
-          return (
-            <Radio
-              checked={checked}
-              disabled={disabled}
-              description={description}
-              helperLabel={helperLabel}
-              helperLabelClassName={helperLabelClassName}
-              size={size}
-              key={index}
-              name={name}
-              radioClassName={radioClassName}
-              value={optionValue}
-              label={optionLabel}
-            />
-          );
-        })}
+            return (
+              <Radio
+                checked={checked}
+                disabled={disabled}
+                description={description}
+                helperLabel={helperLabel}
+                helperLabelClassName={helperLabelClassName}
+                size={size}
+                key={index}
+                name={name}
+                radioClassName={radioClassName}
+                value={optionValue}
+                label={optionLabel}
+              />
+            );
+          }
+        )}
       </div>
       <ErrorMessage name={name} />
     </>

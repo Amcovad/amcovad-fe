@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 import Image from "next/image";
-import { MultiplyIcon } from "@/public/assets/dashboard/navBarIcon";
+import { IoClose } from "react-icons/io5";
 
 type ColorType = {
   [key: string]: string;
@@ -97,7 +97,7 @@ export const BadgeGroup = ({
 };
 
 BadgeGroup.defaultProps = {
-  afterIcon: <MultiplyIcon />,
+  afterIcon: <IoClose />,
   avatar: null,
   color: "success",
   badgeText: null,
