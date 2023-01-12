@@ -41,7 +41,7 @@ const Tab = ({ data }: Data) => {
   ));
 
   return (
-    <div className=" py-6 px-2 lg:py-12 mx-auto lg:max-w-2xl">
+    <div className=" py-6 px-2 lg:py-12 mx-auto lg:max-w-4xl">
       <ul className="flex flex-wrap justify-start lg:space-x-5 list-none border-b-[2px] border-[#C4C4C4]">
         {TabTitles}
       </ul>

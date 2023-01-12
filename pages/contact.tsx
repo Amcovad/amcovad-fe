@@ -45,17 +45,17 @@ const Contact = () => {
                 </p>
                 <HookForm onSubmit={onSubmit} schema={contactUsSchema}>
                   <div className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3">
-                    <div className="col-span-full sm:col-span-2 ">
+                  <div className="col-span-full ">
                       <Input
                         label="Your name here"
                         name="fullName"
                         type="text"
                                   />
                     </div>
-                    <div className="col-span-full sm:col-span-2">
+                    <div className="col-span-full sm:col-span-3">
                       <Input label="Your email"  name="email" type="text" />
                     </div>
-                    <div className="col-span-full sm:col-span-2">
+                    <div className="col-span-full sm:col-span-3">
                       <Input label="Phone" name="phone" type="number" />
                     </div>
 
@@ -64,7 +64,7 @@ const Contact = () => {
                     </div>
                     <div className="col-span-full">
                       <Textarea
-                        rows="5"
+                        rows={5}
                         label="Your message"
                         name="message"
                         className="bg-secondary-25"

@@ -13,17 +13,17 @@ const AttentionCard = () => {
         </div>
         <div className="py-3">
           <div className="flex items-center mt-4 -space-x-3">
-            <div className="">
+            <span className=" flex items-center justify-center border-2 rounded-full hover:z-20 border-white">
               <Image
-                className="w-10 h-10 m-auto rounded-full border-2 hover:z-20  border-white"
+                className=" rounded-full "
                 width={40}
                 height={40}
                 objectFit="cover"
-                src="/assets/dashboard/User-image3.jpg"
+                src="/assets/dashboard/User-Jumoke.jpg"
                 alt="user avatar3"
               />
-            </div>
-            <div className="">
+            </span>
+            <span className="">
               <Image
                 className="w-10 h-10 m-auto rounded-full border-2 hover:z-20 border-white"
                 width={40}
@@ -32,8 +32,8 @@ const AttentionCard = () => {
                 src="/assets/dashboard/User-image4.jpg"
                 alt="user avatar4"
               />
-            </div>
-            <div className="">
+            </span>
+            <span className="">
               <Image
                 className="w-10 h-10 m-auto rounded-full  border-2 hover:z-20 border-white"
                 width={40}
@@ -42,8 +42,8 @@ const AttentionCard = () => {
                 src="/assets/dashboard/User-image5.jpg"
                 alt="user avatar5"
               />
-            </div>
-            <div className="">
+            </span>
+            <span className="">
               <Image
                 className="w-10 h-10 m-auto rounded-full border-2 hover:z-40 border-white"
                 width={40}
@@ -52,7 +52,7 @@ const AttentionCard = () => {
                 src="/assets/dashboard/User-image6.jpg"
                 alt="user avatar6"
               />
-            </div>
+            </span>
           </div>
           <div className=" text-white mt-3 ">
             <p className=" text-xl font-semibold">Ajo with Friend</p>
