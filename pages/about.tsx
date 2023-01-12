@@ -13,7 +13,7 @@ const About = () => {
       <div>
         <div className=" 2xl:container 2xl:mx-auto overflow-hidden">
           <div className="w-screen mx-auto">
-            <div className=" w-full pt-20 lg:pt-16 ">
+            <div className=" w-full pt-20 lg:pt-14 ">
               <Image src={aboutImg} className="h-96" alt="contact page image" />
             </div>
           </div>
