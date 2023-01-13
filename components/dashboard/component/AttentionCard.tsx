@@ -19,13 +19,13 @@ const AttentionCard = () => {
                 width={40}
                 height={40}
                 objectFit="cover"
-                src="/assets/dashboard/User-Jumoke.jpg"
+                src="/assets/dashboard/User-image3.jpg"
                 alt="user avatar3"
               />
             </span>
-            <span className="">
+            <span className="flex items-center justify-center border-2 rounded-full z-10 hover:z-20 border-white">
               <Image
-                className="w-10 h-10 m-auto rounded-full border-2 hover:z-20 border-white"
+                className="rounded-full"
                 width={40}
                 height={40}
                 objectFit="cover"
@@ -33,9 +33,9 @@ const AttentionCard = () => {
                 alt="user avatar4"
               />
             </span>
-            <span className="">
+            <span className="flex items-center justify-center border-2 rounded-full z-10 hover:z-20 border-white">
               <Image
-                className="w-10 h-10 m-auto rounded-full  border-2 hover:z-20 border-white"
+                className="m-auto rounded-full"
                 width={40}
                 height={40}
                 objectFit="cover"
@@ -43,9 +43,9 @@ const AttentionCard = () => {
                 alt="user avatar5"
               />
             </span>
-            <span className="">
+            <span className="flex items-center justify-center border-2 rounded-full z-10 hover:z-20 border-white">
               <Image
-                className="w-10 h-10 m-auto rounded-full border-2 hover:z-40 border-white"
+                className="m-auto rounded-full"
                 width={40}
                 height={40}
                 objectFit="cover"

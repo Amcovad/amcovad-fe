@@ -44,9 +44,9 @@ const TimelineCard = () => {
           <div className="py-3">
             <div className="flex items-center justify-between mt-5 pb-2 ">
               <div className="flex items-center -space-x-3">
-                <div className="">
+                <div className="flex items-center justify-center border-2 rounded-full z-10 hover:z-20 border-white">
                   <Image
-                    className="w-10 h-10 rounded-full border-2 hover:z-20  border-white"
+                    className="rounded-full "
                     width={40}
                     height={40}
                     objectFit="cover"
@@ -54,9 +54,9 @@ const TimelineCard = () => {
                     alt="user avatar3"
                   />
                 </div>
-                <div className="">
+                <div className="flex items-center justify-center border-2 rounded-full z-10 hover:z-20 border-white">
                   <Image
-                    className="w-10 h-10 rounded-full border-2 hover:z-20 border-white"
+                    className="rounded-full"
                     width={40}
                     height={40}
                     objectFit="cover"
@@ -66,7 +66,7 @@ const TimelineCard = () => {
                 </div>
                 <div className="hidden">
                   <Image
-                    className="w-10 h-10 rounded-full  border-2 hover:z-20 border-white"
+                    className="rounded-full"
                     width={40}
                     height={40}
                     objectFit="cover"
@@ -74,9 +74,9 @@ const TimelineCard = () => {
                     alt="user avatar5"
                   />
                 </div>
-                <div className="">
+                <div className="flex items-center justify-center border-2 rounded-full z-10 hover:z-20 border-white">
                   <Image
-                    className="w-10 h-10 rounded-full border-2 hover:z-40 border-white"
+                    className="rounded-full"
                     width={40}
                     height={40}
                     objectFit="cover"
