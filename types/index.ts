@@ -2,6 +2,7 @@ export type ButtonProps = {
   className: string;
   children: any;
   color: string;
+  disabled?: boolean;
   icon?: JSX.Element | React.ReactNode;
   leftIcon: any;
   onClick?: () => void;
@@ -12,7 +13,7 @@ export type ButtonProps = {
 
 export type CommonTypes = {
   className?: string;
-  feedBack: string;
+  feedBack?: string;
   floatLabel?: boolean;
   name?: string;
 };
@@ -48,13 +49,13 @@ type InputTypes = {
 
 type TextAreaTypes = {
   leadingIcon?: JSX.Element | React.ReactNode;
-  label: string;
-  labelClassName: string;
-  toolTip: boolean;
-  hintText: string;
-  text: any;
-  placeholder: string;
-  rows: number;
+  label?: string;
+  labelClassName?: string;
+  toolTip?: boolean;
+  hintText?: string;
+  text?: any;
+  placeholder?: string;
+  rows?: number;
 };
 
 type placements =

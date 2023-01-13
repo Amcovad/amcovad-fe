@@ -6,6 +6,7 @@ const Button = ({
   className,
   children,
   color,
+  disabled,
   icon,
   leftIcon,
   onClick,
@@ -57,10 +58,12 @@ const Button = ({
   return (
     <button
       onClick={onClick}
+      disabled={disabled}
       className={classNames(
         "transition duration-150 focus:outline-none font-Inter font-medium rounded text-center inline-flex items-center justify-center mr-2",
         styles[outlineClass][color],
         sizes[size],
+        { "cursor-not-allowed opacity-80": disabled },
         className
       )}
     >
