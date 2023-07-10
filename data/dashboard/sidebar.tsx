@@ -19,17 +19,17 @@ const sidebar: sidebarProp[] = [
   {
     icon: <Category size="22" variant="Bulk" />,
     name: "Dashboard",
-    url: "/dashboard",
+    url: "/app/admin/dashboard",
   },
   {
     icon: <CardSend size="22" variant="Bulk" />,
     name: "Transaction",
-    url: "/dashboard/transaction",
+    url: "/app/admin/dashboard/transaction",
   },
   {
     icon: <DocumentUpload size="22" variant="Bulk" />,
     name: "Templates",
-    url: "/dashboard/templates",
+    url: "/app/admin/dashboard/templates",
   },
 
   {

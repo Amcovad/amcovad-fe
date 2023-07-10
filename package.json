@@ -11,6 +11,8 @@
     "build-storybook": "build-storybook -s public"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.15",
+    "@heroicons/react": "^2.0.18",
     "@storybook/addon-postcss": "^2.0.0",
     "classnames": "^2.3.1",
     "iconsax-react": "^0.0.8",
