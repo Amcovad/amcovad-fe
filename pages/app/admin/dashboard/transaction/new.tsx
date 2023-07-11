@@ -5,6 +5,10 @@ import { SignInSchema } from "schema/authSchema";
 import Input from "@/components/form/Input";
 import CustomSelect from "@/components/form/CustomSelect";
 import people from "@/data/dashboard/userData";
+import Button from "@/components/form/Button";
+import TabTransansaction from "@/components/TabTransansaction";
+import repaymentPlan from "@/data/dashboard/repaymentPlan";
+import { ArrowRight } from "iconsax-react";
 
 function NewTransactions() {
   const [selected, setSelected] = useState(people[2]);
@@ -60,14 +64,14 @@ function NewTransactions() {
                   />
                 </div>
               </div>
-
+              <TabTransansaction data={repaymentPlan} />
               <div className="">
-                <Input
-                  label="Amount"
-                  name="amount"
-                  placeholder="Amount to Lend to Friend"
-                  type="number"
-                />
+                <Button
+                  size="lg"
+                  rightIcon={<ArrowRight size="24" color="#ffffff" />}
+                >
+                  Continue
+                </Button>
               </div>
             </div>
           </HookForm>

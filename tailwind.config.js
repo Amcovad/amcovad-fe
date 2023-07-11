@@ -44,6 +44,7 @@ module.exports = {
       "danger-xs": "0px 0px 0px 4px rgba(255, 81, 81, 0.25)",
       "warning-xs": "0px 0px 0px 4px rgba(234, 196, 53, 0.2)",
       normal: "0px 1px 2px rgba(16, 24, 40, 0.05)",
+      sm: "0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
       md: "0px 2px 4px -2px rgba(16, 24, 40, 0.06), 0px 4px 8px -2px rgba(16, 24, 40, 0.1)",
     },
     fontFamily: {
@@ -143,6 +144,7 @@ module.exports = {
           900: "#2F270B",
         },
         info: {
+          25: "#F2FCFD",
           50: "#D7F6FA",
           100: "#ACECF5",
           200: "#81E2EF",
