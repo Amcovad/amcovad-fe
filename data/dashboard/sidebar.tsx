@@ -19,23 +19,23 @@ const sidebar: sidebarProp[] = [
   {
     icon: <Category size="22" variant="Bulk" />,
     name: "Dashboard",
-    url: "/app/admin/dashboard",
+    url: "/app",
   },
   {
     icon: <CardSend size="22" variant="Bulk" />,
     name: "Transaction",
-    url: "/app/admin/dashboard/transaction",
+    url: "/app/transaction",
   },
   {
     icon: <DocumentUpload size="22" variant="Bulk" />,
     name: "Templates",
-    url: "/app/admin/dashboard/templates",
+    url: "/app/templates",
   },
 
   {
     icon: <Note1 size="22" variant="Bulk" />,
     name: "Drafts",
-    url: "/dashboard/drafts",
+    url: "/drafts",
   },
   {
     icon: <WalletAdd1 size="22" variant="Bulk" />,

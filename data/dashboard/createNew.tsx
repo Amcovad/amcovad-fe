@@ -9,7 +9,7 @@ const createNew = [
     iconColor: "#00793F",
     title: "Start New Transaction",
     textColor: "text-success-700",
-    url: "/app/admin/dashboard/transaction/new",
+    url: "/app/transaction/new",
     btn: (
       <Button color="success" size="lg">
         Lending Transaction
@@ -23,7 +23,7 @@ const createNew = [
     iconColor: "#016C95",
     title: "Quick Start with a Template",
     textColor: "text-primary-700",
-    url: "/app/admin/dashboard/templates",
+    url: "/app/templates",
     btn: (
       <Button color="primary" size="lg">
         Select a Template
