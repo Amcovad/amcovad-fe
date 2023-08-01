@@ -8,7 +8,7 @@ type FooterLinkProps = {
 const FooterLink = ({ title, url }: FooterLinkProps) => {
   return (
     <li className="text-secondary-300 transition-colors duration-300 ">
-      <Link href={url} passHref>
+      <Link href={url} passHref legacyBehavior>
         <a>{title}</a>
       </Link>
     </li>

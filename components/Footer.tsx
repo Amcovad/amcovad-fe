@@ -9,12 +9,12 @@ import footerLinks from "@/data/footer";
 
 const Footer = () => {
   return (
-    <footer className="bg-tertiary bg-cover bg-left lg:bg-top  bg-[url('/assets/footer/footer-hexagons.png')]">
+    <footer className="bg-neutral-tertiary bg-cover bg-left lg:bg-top  bg-[url('/assets/footer/footer-hexagons.png')]">
       <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full pb-24 md:px-28 ">
         <div className="2xl:container px-2 py-4 mx-auto">
           <div className="grid gap-4 lg:gap-10  mb-8 lg:grid-cols-12">
             <div className="col-span-12 lg:col-span-3">
-              <Link passHref href="/">
+              <Link passHref href="/" legacyBehavior>
                 <span className="inline-flex items-center cursor-pointer">
                   <Image src={FooterLogo} alt="footer logo" />
                 </span>

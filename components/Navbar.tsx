@@ -18,11 +18,11 @@ type MenuItems = {
 };
 
 type Navbars = {
-  isAuthPage: boolean;
+  isAuthPage?: boolean;
 };
 const style = {
   container: `relative top-1/4 w-full text-left pl-16 md:pl-32 mt-8`,
-  item: `text-3xl text-white cursor-pointer  hover:secondary-25`,
+  item: `text-3xl text-neutral-white cursor-pointer  hover:secondary-25`,
   logo: `absolute top-8 left-8 md:left-20`,
   menu: {
     open: `h-full w-full `,
@@ -43,23 +43,21 @@ const Menu = ({ children, isMenuOpen }: Menus) => {
   );
 };
 
-const MenuContainer = ({
-  children,
-}: React.PropsWithChildren<React.ReactNode>) => {
+const MenuContainer = ({ children }: any) => {
   return <div className={style.container}>{children}</div>;
 };
 
 const MenuItem = ({ title, url }: MenuItems) => {
   return (
     <div className="p-2">
-      <Link href={url} passHref>
+      <Link href={url} passHref legacyBehavior>
         <span className={style.item}>{title}</span>
       </Link>
     </div>
   );
 };
 
-const Navbar = ({ isAuthPage }: Navbars) => {
+const Navbar = ({ isAuthPage = false }: Navbars) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -69,12 +67,12 @@ const Navbar = ({ isAuthPage }: Navbars) => {
     };
   });
 
-  const isSticky = (e) => {
+  const isSticky = (e: any) => {
     const header = document.querySelector(".mobile-bg");
     const scrollTop = window.scrollY;
     scrollTop >= 150
-      ? header.classList.add("is-sticky")
-      : header.classList.remove("is-sticky");
+      ? header?.classList.add("is-sticky")
+      : header?.classList.remove("is-sticky");
   };
 
   return (
@@ -108,7 +106,7 @@ const Navbar = ({ isAuthPage }: Navbars) => {
             }
           )}
         >
-          <Link href="/" passHref>
+          <Link href="/" passHref legacyBehavior>
             <a
               className={classNames(
                 { "xl:pl-11": !isAuthPage },
@@ -125,7 +123,7 @@ const Navbar = ({ isAuthPage }: Navbars) => {
           </ul>
           <ul className="items-center hidden lg:flex">
             <li>
-              <Link href="/sign-in">
+              <Link href="/sign-in" legacyBehavior>
                 <a>
                   <Button outline className="uppercase">
                     Sign in
@@ -134,7 +132,7 @@ const Navbar = ({ isAuthPage }: Navbars) => {
               </Link>
             </li>
             <li>
-              <Link href="/sign-up">
+              <Link href="/sign-up" legacyBehavior>
                 <a>
                   <Button className="ml-4 uppercase">Try it now</Button>
                 </a>
@@ -151,8 +149,8 @@ const Navbar = ({ isAuthPage }: Navbars) => {
             >
               <Image
                 src={HamburgerMenu}
-                width="30px"
-                height="30px"
+                width={30}
+                height={30}
                 alt="hamburger icon"
               />
             </button>
@@ -171,8 +169,8 @@ const Navbar = ({ isAuthPage }: Navbars) => {
                   </div>
                   <button
                     aria-label="Close"
-                    className="absolute top-3 right-5 text-5xl text-white cursor-pointer "
-                    onClick={() => setIsMenuOpen()}
+                    className="absolute top-3 right-5 text-5xl text-neutral-white cursor-pointer "
+                    onClick={() => setIsMenuOpen(!isMenuOpen)}
                   >
                     &times;
                   </button>
@@ -198,8 +196,8 @@ const Navbar = ({ isAuthPage }: Navbars) => {
   );
 };
 
-Navbar.defaultProps = {
-  isAuthPage: false,
-};
+// Navbar.defaultProps = {
+//   isAuthPage: false,
+// };
 
 export default Navbar;

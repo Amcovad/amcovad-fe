@@ -5,16 +5,16 @@ import { showError, showSuccess } from "../../utils/form-helpers";
 import { LabelProps } from "@/types/index";
 
 export function Label({
-  className,
+  className = "text-xs",
   checked,
   children,
-  feedBack,
+  feedBack = "FEEDBACK.ALL",
   floatLabel,
-  floatLabelClass,
+  floatLabelClass = "bg-secondary-25 peer-focus:bg-secondary-25 -translate-y-7 peer-focus:-translate-y-7",
   htmlFor,
   name,
   text,
-}: LabelProps) {
+}: LabelProps | any) {
   const {
     formState: { dirtyFields, errors },
   } = useFormContext();
@@ -49,16 +49,16 @@ export function Label({
   );
 }
 
-Label.defaultProps = {
-  className: "text-xs",
-  feedBack: "FEEDBACK.ALL",
-  floatLabel: null,
-  floatLabelClass:
-    "bg-secondary-25 peer-focus:bg-secondary-25 -translate-y-7 peer-focus:-translate-y-7",
-  htmlFor: null,
-  name: null,
-  text: null,
-};
+// Label.defaultProps = {
+//   className: "text-xs",
+//   feedBack: "FEEDBACK.ALL",
+//   floatLabel: null,
+//   floatLabelClass:
+//     "bg-secondary-25 peer-focus:bg-secondary-25 -translate-y-7 peer-focus:-translate-y-7",
+//   htmlFor: null,
+//   name: null,
+//   text: null,
+// };
 
 type HelperLabelProps = {
   checked?: boolean;
@@ -103,10 +103,10 @@ export const HelperLabel = ({
   );
 };
 
-HelperLabel.defaultProps = {
-  helperLabelClassName: null,
-  htmlFor: null,
-  name: null,
-  text: null,
-  title: null,
-};
+// HelperLabel.defaultProps = {
+//   helperLabelClassName: null,
+//   htmlFor: null,
+//   name: null,
+//   text: null,
+//   title: null,
+// };

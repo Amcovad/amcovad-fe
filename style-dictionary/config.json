@@ -1,0 +1,29 @@
+{
+  "source": ["./style-dictionary/src/**/*.json"],
+  "platforms": {
+    "web": {
+      "transformGroup": "js",
+      "buildPath": "./tokens/",
+      "files": [
+        {
+          "destination": "design.tokens.json",
+          "format": "custom/sourceFile"
+        },
+        {
+          "destination": "color.tokens.js",
+          "format": "custom/color/object"
+        }
+      ]
+    },
+    "css": {
+      "transformGroup": "css",
+      "buildPath": "./tokens/",
+      "files": [
+        {
+          "destination": "variables.css",
+          "format": "css/variables"
+        }
+      ]
+    }
+  }
+}

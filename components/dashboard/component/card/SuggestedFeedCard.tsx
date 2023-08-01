@@ -27,7 +27,7 @@ const SuggestedFeedCard = ({
         />
       </div>
       <div className="pb-1">
-        <Link href={url}>
+        <Link href={url} legacyBehavior>
           <a>
             <p className="text-xs leading-4 tracking-normal font-bold text-secondary-600">
               {title}

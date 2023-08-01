@@ -8,7 +8,7 @@ type SocialLinksProps = {
 };
 const SocialLinks = ({ src, url }: SocialLinksProps) => {
   return (
-    <Link href={url} passHref>
+    <Link href={url} passHref legacyBehavior>
       <a className="text-gray-500 transition-colors duration-300 hover:text-seconadry-400 cursor-pointer">
         <Image src={src} width={38} height={35} alt="social icon logo" />
       </a>

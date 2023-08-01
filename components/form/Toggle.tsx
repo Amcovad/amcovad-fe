@@ -22,10 +22,10 @@ const Toggle = ({
   containerClassName,
   description,
   disabled,
-  helperLabel,
-  helperLabelClassName,
+  helperLabel = "",
+  helperLabelClassName = "",
   label,
-  name,
+  name = "",
 }: ToogleType) => {
   const { register } = useFormContext();
   return (
@@ -44,7 +44,7 @@ const Toggle = ({
               type="checkbox"
               {...register(name)}
               id={name}
-              value={true}
+              // value={true}
               className={classNames(
                 "peer appearance-none cursor-pointer bg-secondary-50 border border-secondary-50 rounded-xl checked:border-primary-500 checked:bg-primary-500 w-10 h-5 focus:shadow-primary-xs",
                 {
@@ -58,7 +58,7 @@ const Toggle = ({
             />
             <span
               className={classNames(
-                "peer-checked:bg-white transition-all duration-200 pointer-events-none w-4 h-4 block absolute top-[2px] left-1 rounded-full bg-white",
+                "peer-checked:bg-neutral-white transition-all duration-200 pointer-events-none w-4 h-4 block absolute top-[2px] left-1 rounded-full bg-neutral-white",
                 { "peer-disabled:left-5": disabled },
                 { "peer-checked:left-5": !disabled }
               )}

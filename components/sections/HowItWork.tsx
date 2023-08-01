@@ -7,7 +7,7 @@ import classNames from "classnames";
 type Slides = {
   count: number;
   image: string;
-  orderLast: boolean;
+  orderLast?: boolean;
   title: string;
   text: string;
 };
@@ -39,7 +39,7 @@ export const Slide = ({ count, image, orderLast, title, text }: Slides) => {
                 <p className="max-w-[21.25rem] md:max-w-[30rem] lg:max-w-[23.6875rem] z-10 text-[13.6833px] md:text-sm lg:text-base  text-secondary-700 font-Inter font-normal">
                   {text}
                 </p>
-                <span className="font-Inter block text-[14.875rem] md:text-[12.5rem] lg:text-[16rem] left-[-1.3125rem] md:left-[15px] lg:left-[-1.625rem] top-[3rem] md:top-[1.5rem] lg:top-20 xl:top-24 absolute font-normal text-black opacity-10">
+                <span className="font-Inter block text-[14.875rem] md:text-[12.5rem] lg:text-[16rem] left-[-1.3125rem] md:left-[15px] lg:left-[-1.625rem] top-[3rem] md:top-[1.5rem] lg:top-20 xl:top-24 absolute font-normal text-neutral-black opacity-10">
                   {count}
                 </span>
               </div>

@@ -13,7 +13,7 @@ const SideBar = () => {
       <aside className="h-full bg-secondary-25 overflow-y-auto lg:block fixed lg:relative lg:w-full lg:z-auto left-0 hidden scrollbar">
         <div className="relative hidden lg:block  mb-10 ">
           <div className="h-[5.39rem] bg-secondary-200 z-50 lg:w-1/5 flex items-center px-8 top-0 fixed">
-            <Link href="/" passHref>
+            <Link href="/" passHref legacyBehavior>
               <a>
                 <Image src={Logo} width="167" height="42" alt="logo" />
               </a>
@@ -29,8 +29,8 @@ const SideBar = () => {
                       key={index}
                       name={data.name}
                       url={data.url}
-                      icon={data.icon}
-                     />
+                      Icon={data.Icon}
+                    />
                   );
                 })}
               </ul>
@@ -38,7 +38,7 @@ const SideBar = () => {
             <div className="w-full">
               <div className="w-full flex items-center justify-between ">
                 <div className="  px-6 py-2 w-full bg-secondary-50 ">
-                  <Link href="/settings/profile" passHref>
+                  <Link href="/settings/profile" passHref legacyBehavior>
                     <a className="inline-flex items-center w-full text-sm font-normal font-Inter text-secondary-700 focus:text-secondary-700 transition-colors duration-150 hover:text-primary-500 ">
                       <Setting2 size="22" color="#344055" variant="Bulk" />
                       <span className="ml-4">Settings</span>

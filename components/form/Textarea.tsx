@@ -12,11 +12,11 @@ import { FEEDBACK } from "@/utils/constant";
 const Textarea = ({
   className,
   floatLabel,
-  feedBack,
+  feedBack = "",
   label,
   leadingIcon,
   labelClassName,
-  name,
+  name = "",
   placeholder,
   rows,
   toolTip,

@@ -7,13 +7,13 @@ const HookForm = ({
   children,
   schema,
   defaultValues,
-}: React.PropsWithChildren) => {
+}: React.PropsWithChildren | any) => {
   const methods = useForm({
     mode: "onChange",
     defaultValues,
     resolver: yupResolver(schema),
   });
-  
+
   React.useEffect(() => {
     if (methods.formState.isSubmitSuccessful) {
       methods.reset();

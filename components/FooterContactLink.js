@@ -12,7 +12,7 @@ const FooterContactLink = ({ icon, link, name }) => {
                 </div>
                 {link ?
 
-                    <Link href={link}>
+                    <Link href={link} legacyBehavior>
                         <a>
                             <p className="font-normal text-secondary-300 leading-5 mt-2 lg:mt-0">
                                 {name}

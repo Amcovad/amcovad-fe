@@ -147,7 +147,7 @@ export function CheckboxGroup({
 }: CheckboxGroupProps) {
   return (
     <>
-      {options.map(({ label, value }, index) => {
+      {options.map(({ label, value }: any, index: number) => {
         if (!value || !label) return null;
         const optionLabel = label || value;
         const optionValue = value || label;

@@ -10,50 +10,60 @@ import {
 } from "iconsax-react";
 
 type sidebarProp = {
-  icon: JSX.Element | React.ReactNode;
+  Icon: any;
   name: string;
   url: string;
 };
 
 const sidebar: sidebarProp[] = [
   {
-    icon: <Category size="22" variant="Bulk" />,
+    Icon: Category,
     name: "Dashboard",
-    url: "/app",
+    url: "/dashboard",
   },
   {
-    icon: <CardSend size="22" variant="Bulk" />,
+    Icon: CardSend,
+    name: "Connection",
+    url: "/dashboard/connection",
+  },
+  {
+    Icon: CardSend,
     name: "Transaction",
-    url: "/app/transaction",
+    url: "/dashboard/transaction",
   },
   {
-    icon: <DocumentUpload size="22" variant="Bulk" />,
+    Icon: CardSend,
+    name: "Bank",
+    url: "/dashboard/bank",
+  },
+  {
+    Icon: DocumentUpload,
     name: "Templates",
     url: "/app/templates",
   },
 
   {
-    icon: <Note1 size="22" variant="Bulk" />,
+    Icon: Note1,
     name: "Drafts",
     url: "/drafts",
   },
   {
-    icon: <WalletAdd1 size="22" variant="Bulk" />,
+    Icon: WalletAdd1,
     name: "Wallet",
     url: "/wallet",
   },
   {
-    icon: <Layer size="22" variant="Bulk" />,
+    Icon: Layer,
     name: "Legal",
     url: "/legal",
   },
   {
-    icon: <UserCirlceAdd size="22" variant="Bulk" />,
+    Icon: UserCirlceAdd,
     name: "Personal Info & IDs",
     url: "/personal-info",
   },
   {
-    icon: <UserTick size="22" variant="Bulk" />,
+    Icon: UserTick,
     name: "Reputation",
     url: "/reputation",
   },

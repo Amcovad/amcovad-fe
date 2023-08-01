@@ -1,4 +1,6 @@
-export type ButtonProps = {
+import React, { FC, ButtonHTMLAttributes } from "react";
+
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className: string;
   children: any;
   color: string;
@@ -9,7 +11,9 @@ export type ButtonProps = {
   outline: boolean;
   rightIcon: any;
   size: string;
-};
+  loading?:boolean;
+}
+
 
 export type CommonTypes = {
   className?: string;
@@ -128,3 +132,14 @@ export type Styles = {
   solid: ColorType;
   outline: ColorType;
 };
+
+export type UserType = {
+  id: string;
+  email: string;
+  firstname: string;
+  lastname: string;
+  photo:string | null;
+  status:string;
+  role:string;
+
+}

@@ -7,7 +7,6 @@ import Logo from "@/public/assets/logo/logo.svg";
 import { Setting2 } from "iconsax-react";
 import { XIcon } from "@/public/assets/dashboard/navBarIcon";
 
-
 import UserProfileCard from "./UserProfileCard";
 
 type MobileSidebars = {
@@ -20,7 +19,7 @@ const MobileSidebar = ({ onClick }: MobileSidebars) => {
         <div className="bg-secondary-25">
           <div className="flex items-center justify-between px-3  bg-secondary-25 z-50 top-0 sticky">
             <div className="h-16 w-full flex items-center pt-1">
-              <Link href="/" passHref>
+              <Link href="/" passHref legacyBehavior>
                 <a>
                   <Image src={Logo} width="155" height="35" alt="logo" />
                 </a>
@@ -41,9 +40,8 @@ const MobileSidebar = ({ onClick }: MobileSidebars) => {
                 <NavLink
                   key={index}
                   name={data.name}
-                  activeIcon={data.activeIcon}
                   url={data.url}
-                  icon={data.icon}
+                  Icon={data.Icon}
                 />
               );
             })}
@@ -52,7 +50,7 @@ const MobileSidebar = ({ onClick }: MobileSidebars) => {
         <div className="w-full">
           <div className="w-full flex items-center justify-between ">
             <div className="  px-6 py-2 w-full bg-secondary-300 ">
-              <Link href="/settings" passHref>
+              <Link href="/settings" passHref legacyBehavior>
                 <a className="inline-flex items-center w-full text-sm font-normal font-Inter text-secondary-700 focus:text-secondary-700 transition-colors duration-150 hover:text-primary-400 ">
                   <Setting2 size="22" color="#344055" variant="Bulk" />
                   <span className="ml-4">Settings</span>

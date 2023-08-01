@@ -6,6 +6,8 @@ type SignInSchemas = {
 };
 
 type SignUpSchemas = {
+  firstName: string;
+  lastName: string;
   email: string;
   password: string;
   confirmPassword: string;
@@ -32,6 +34,8 @@ export const SignInSchema: yup.SchemaOf<SignInSchemas> = yup
 
 export const SignUpSchema: yup.SchemaOf<SignUpSchemas> = yup
   .object({
+    firstName: yup.string().required("First name is required"),
+    lastName: yup.string().required("Last name is required"),
     email: yup
       .string()
       .email("Kindly provide a valid email address")

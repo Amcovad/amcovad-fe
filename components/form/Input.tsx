@@ -12,9 +12,9 @@ import { FEEDBACK } from "@/utils/constant";
 const Input = ({
   className,
   toolTipColor,
-  feedBack,
+  feedBack = "FEEDBACK.ALL",
   floatLabel,
-  Icon,
+  Icon = null,
   leadingIcon,
   labelClassName,
   toolTip,
@@ -25,10 +25,10 @@ const Input = ({
   toolTipPlacement,
   toolTipIcon,
   name,
-  placeholder,
-  label,
-  type,
-}: InputProps) => {
+  placeholder = "",
+  label = "",
+  type = "text",
+}: InputProps | any) => {
   const {
     register,
     formState: { dirtyFields, errors },
@@ -199,11 +199,11 @@ const Input = ({
   );
 };
 
-Input.defaultProps = {
-  feedBack: "FEEDBACK.ALL",
-  label: null,
-  type: "text",
-  placeholder: null,
-  Icon: null,
-};
+// Input.defaultProps = {
+//   feedBack: "FEEDBACK.ALL",
+//   label: null,
+//   type: "text",
+//   placeholder: null,
+//   Icon: null,
+// };
 export default Input;

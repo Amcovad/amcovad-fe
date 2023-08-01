@@ -48,7 +48,7 @@ const Navbar = () => {
                           color="#344055"
                           variant="Bulk"
                         />
-                        <span className="bg-danger-500 border-[0.0938rem] border-white right-1 top-0 w-2.5 h-2.5 absolute rounded-full"></span>
+                        <span className="bg-danger-500 border-[0.0938rem] border-neutral-white right-1 top-0 w-2.5 h-2.5 absolute rounded-full"></span>
                       </div>
                       <div className="relative hidden lg:flex">
                         <MessageText1
@@ -56,7 +56,7 @@ const Navbar = () => {
                           color="#344055"
                           variant="Bulk"
                         />
-                        <span className="bg-danger-500 border-[0.0938rem] border-white right-0 top-0 w-2.5 h-2.5 absolute rounded-full"></span>
+                        <span className="bg-danger-500 border-[0.0938rem] border-neutral-white right-0 top-0 w-2.5 h-2.5 absolute rounded-full"></span>
                       </div>
                       <div className="relative">
                         <Profile2User
@@ -64,7 +64,7 @@ const Navbar = () => {
                           color="#344055"
                           variant="Bulk"
                         />
-                        <span className="bg-danger-500 border-[0.0938rem] border-white right-0 top-0 w-2.5 h-2.5 absolute rounded-full"></span>
+                        <span className="bg-danger-500 border-[0.0938rem] border-neutral-white right-0 top-0 w-2.5 h-2.5 absolute rounded-full"></span>
                       </div>
                     </div>
                     <ManageProfile />

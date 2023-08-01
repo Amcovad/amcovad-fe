@@ -6,7 +6,10 @@ type ErrorMessages = {
   name: string;
 };
 
-export function ErrorMessage({ className, name }: ErrorMessages) {
+export function ErrorMessage({
+  className = "",
+  name = "",
+}: ErrorMessages | any) {
   const {
     formState: { errors },
   } = useFormContext();
@@ -15,14 +18,14 @@ export function ErrorMessage({ className, name }: ErrorMessages) {
     <>
       {errors?.[name] && (
         <div className={classNames("text-danger-500 py-1 text-sm ", className)}>
-          {errors?.[name]?.message}
+          {errors?.[name]?.message as any}
         </div>
       )}
     </>
   );
 }
 
-ErrorMessage.defaultProps = {
-  className: null,
-  name: null,
-};
+// ErrorMessage.defaultProps = {
+//   className: null,
+//   name: null,
+// };

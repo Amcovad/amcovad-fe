@@ -11,3 +11,5 @@ export const FEEDBACK: FEEDBACKS = {
   SUCCESS: "FEEDBACK.SUCCESS",
   NONE: "FEEDBACK.NONE",
 };
+
+export const API_URL = "http://localhost:5100/api/v1";

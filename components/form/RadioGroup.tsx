@@ -35,9 +35,9 @@ export function Radio({
   helperLabel,
   helperLabelClassName,
   label,
-  name,
+  name = "",
   radioClassName,
-  size,
+  size = "",
   value,
 }: RadioProps) {
   const iconName: iconNameType = {
@@ -70,7 +70,7 @@ export function Radio({
             radioClassName
           )}
           id={`radio-${value}`}
-          name={name}
+          // name={name}
           {...register(name)}
           type="radio"
           value={value}
@@ -132,7 +132,7 @@ const RadioGroup = ({
   name,
   options,
   radioClassName,
-  size,
+  size = "",
 }: RadioGroupProps) => {
   return (
     <>
