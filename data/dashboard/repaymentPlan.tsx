@@ -6,7 +6,6 @@ type Content = {
   [key: string]: React.ReactNode;
 };
 
-// date: "You will be returning the total of ₦ 900,000 on the 25th November 2022",
 const alertEventData = [
   {
     title: "One Off",
@@ -111,7 +110,7 @@ export const indays = (
         />
       </div>
     </div>
-    {/* <AlertInfo data={alertEventData[1]} /> */}
+
     {alertEventData[1] && (
       <AlertInfo
         key={1}
