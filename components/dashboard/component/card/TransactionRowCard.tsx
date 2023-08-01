@@ -23,7 +23,7 @@ const TransactionRowCard = ({
   userTag,
 }: transactionRowType) => {
   return (
-    <tr className="bg-white hover:bg-gray-50 cursor-pointer border-b last-of-type:border-none">
+    <tr className="bg-neutral-white hover:bg-gray-50 cursor-pointer border-b last-of-type:border-none">
       <th
         scope="row"
         className="px-6 py-4  text-sm inline-flex items-center gap-3 whitespace-nowrap "
@@ -54,7 +54,7 @@ const TransactionRowCard = ({
           {userImages.map((imagePath: string, index: any) => (
             <div
               key={index}
-              className="flex items-center justify-center border-2 rounded-full min-w-[28px] min-h-[28px] z-10 hover:z-20 border-white"
+              className="flex items-center justify-center border-2 rounded-full min-w-[28px] min-h-[28px] z-10 hover:z-20 border-neutral-white"
             >
               <Image
                 className="m-auto rounded-full"
@@ -68,7 +68,7 @@ const TransactionRowCard = ({
           ))}
           {additionalUserImages && (
             <Link href="/app/admin/dashboard">
-              <p className="flex justify-center items-center w-8 h-8 min-w-[32px] min-h-[32px]  text-xs z-10 hover:z-20 font-semibold text-center text-purple-600 bg-purple-50 rounded-full border-2 border-white hover:bg-purple-100">
+              <p className="flex justify-center items-center w-8 h-8 min-w-[32px] min-h-[32px]  text-xs z-10 hover:z-20 font-semibold text-center text-purple-600 bg-purple-50 rounded-full border-2 border-neutral-white hover:bg-purple-100">
                 +{additionalUserImages}
               </p>
             </Link>
@@ -84,7 +84,7 @@ const TransactionRowCard = ({
                 style={{ width: `${complection}%` }}
               />
             </div>
-            <span className="text-sm font-medium text-gray-700 dark:text-white">
+            <span className="text-sm font-medium text-gray-700 dark:text-neutral-white">
               {complection}%
             </span>
           </div>

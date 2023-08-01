@@ -25,31 +25,31 @@ const Button = ({
   const styles: Styles = {
     solid: {
       primary:
-        "text-white bg-primary-500 hover:bg-primary-600 hover:text-white focus:shadow-primary-xs ",
+        "text-neutral-white bg-primary-500 hover:bg-primary-600 hover:text-neutral-white focus:shadow-primary-xs ",
       secondary:
-        "text-white bg-secondary-800 hover:bg-secondary-900 hover:text-white focus:shadow-secondary-xs",
+        "text-neutral-white bg-secondary-800 hover:bg-secondary-900 hover:text-neutral-white focus:shadow-secondary-xs",
       light:
         "text-secondary-500 bg-secondary-50 hover:bg-secondary-100 hover:text-secondary-600 focus:shadow-secondary-xs",
       danger:
-        "text-white bg-danger-600 hover:bg-danger-500 hover:text-white focus:shadow-danger-xs",
+        "text-neutral-white bg-danger-600 hover:bg-danger-500 hover:text-neutral-white focus:shadow-danger-xs",
       warning:
-        "text-white bg-warning-500 hover:bg-warning-600 hover:text-white focus:shadow-warning-xs",
+        "text-neutral-white bg-warning-500 hover:bg-warning-600 hover:text-neutral-white focus:shadow-warning-xs",
       success:
-        "text-white bg-success-600 hover:bg-success-500 hover:text-white focus:shadow-success-xs",
+        "text-neutral-white bg-success-600 hover:bg-success-500 hover:text-neutral-white focus:shadow-success-xs",
     },
     outline: {
       primary:
-        "text-secondary-600 border border-secondary-600 hover:bg-secondary-600 hover:border-secondary-600 hover:text-white focus:shadow-primary-xs",
+        "text-secondary-600 border border-secondary-600 hover:bg-secondary-600 hover:border-secondary-600 hover:text-neutral-white focus:shadow-primary-xs",
       secondary:
-        "text-primary-500 border border-primary-500 hover:bg-secondary-600 hover:border-secondary-600 hover:text-white focus:shadow-secondary-xs ",
+        "text-primary-500 border border-primary-500 hover:bg-secondary-600 hover:border-secondary-600 hover:text-neutral-white focus:shadow-secondary-xs ",
       light:
         "text-secondary-500 bg-secondary-50 hover:bg-secondary-100 hover:text-secondary-600 focus:shadow-secondary-xs",
       danger:
-        "text-danger-600 border border-danger-600 hover:bg-danger-500 hover:border-danger-500 hover:text-white focus:shadow-danger-xs ",
+        "text-danger-600 border border-danger-600 hover:bg-danger-500 hover:border-danger-500 hover:text-neutral-white focus:shadow-danger-xs ",
       warning:
-        "text-warning-600 border border-warning-600 hover:bg-warning-500 hover:border-warning-500 hover:text-white focus:shadow-warning-xs ",
+        "text-warning-600 border border-warning-600 hover:bg-warning-500 hover:border-warning-500 hover:text-neutral-white focus:shadow-warning-xs ",
       success:
-        "text-success-600 border border-success-600 hover:bg-success-500 hover:border-success-500 hover:text-white focus:shadow-success-xs ",
+        "text-success-600 border border-success-600 hover:bg-success-500 hover:border-success-500 hover:text-neutral-white focus:shadow-success-xs ",
     },
   };
 

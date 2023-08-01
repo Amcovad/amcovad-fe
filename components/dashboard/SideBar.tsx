@@ -29,8 +29,8 @@ const SideBar = () => {
                       key={index}
                       name={data.name}
                       url={data.url}
-                      icon={data.icon}
-                     />
+                      Icon={data.Icon}
+                    />
                   );
                 })}
               </ul>

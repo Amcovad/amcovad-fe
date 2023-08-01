@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "@/components/form/Button";
 import Input from "@/components/form/Input";
- import Textarea from "@/components/form/Textarea";
+import Textarea from "@/components/form/Textarea";
 import Image from "next/image";
 import HookForm from "@/components/form/Form";
 import contactImg from "../public/assets/contact/contact-img.png";
@@ -45,15 +45,15 @@ const Contact = () => {
                 </p>
                 <HookForm onSubmit={onSubmit} schema={contactUsSchema}>
                   <div className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3">
-                  <div className="col-span-full ">
+                    <div className="col-span-full ">
                       <Input
                         label="Your name here"
                         name="fullName"
                         type="text"
-                                  />
+                      />
                     </div>
                     <div className="col-span-full sm:col-span-3">
-                      <Input label="Your email"  name="email" type="text" />
+                      <Input label="Your email" name="email" type="text" />
                     </div>
                     <div className="col-span-full sm:col-span-3">
                       <Input label="Phone" name="phone" type="number" />
@@ -72,7 +72,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="pt-2">
-                    <Button className="text-white lg:h-12 lg:px-9  ">
+                    <Button className="text-neutral-white lg:h-12 lg:px-9  ">
                       Send message
                     </Button>
                   </div>

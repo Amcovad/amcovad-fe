@@ -5,7 +5,7 @@ import Button from "@/components/form/Button";
 const NewFriendToast = () => {
   return (
     <div
-      className="p-3 pl-6 w-full border hidden lg:flex border-secondary-50  bg-white rounded-lg shadow "
+      className="p-3 pl-6 w-full border hidden lg:flex border-secondary-50  bg-neutral-white rounded-lg shadow "
       role="alert"
     >
       <div className="flex items-center justify-between w-full">
@@ -19,7 +19,7 @@ const NewFriendToast = () => {
               objectFit="cover"
               alt="user image"
             />
-            <span className="inline-flex absolute right-0 bottom-1 border border-white justify-center items-center w-3 h-3 bg-green-600 rounded-full">
+            <span className="inline-flex absolute right-0 bottom-1 border border-neutral-white justify-center items-center w-3 h-3 bg-green-600 rounded-full">
               <span className="sr-only">active user</span>
             </span>
           </div>
@@ -30,7 +30,7 @@ const NewFriendToast = () => {
           </div>
         </div>
         <div>
-          <Button color="light" size="xs" className="">
+          <Button color="neutral-light" size="xs" className="">
             Decline
           </Button>
           <Button className="ml-1" size="xs">

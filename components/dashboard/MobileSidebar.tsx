@@ -7,7 +7,6 @@ import Logo from "@/public/assets/logo/logo.svg";
 import { Setting2 } from "iconsax-react";
 import { XIcon } from "@/public/assets/dashboard/navBarIcon";
 
-
 import UserProfileCard from "./UserProfileCard";
 
 type MobileSidebars = {
@@ -41,9 +40,8 @@ const MobileSidebar = ({ onClick }: MobileSidebars) => {
                 <NavLink
                   key={index}
                   name={data.name}
-                  activeIcon={data.activeIcon}
                   url={data.url}
-                  icon={data.icon}
+                  Icon={data.Icon}
                 />
               );
             })}

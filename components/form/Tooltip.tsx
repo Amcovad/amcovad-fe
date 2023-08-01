@@ -22,7 +22,7 @@ export default function ToolTip({
     <div
       className={classNames(
         "text-xs text-left font-Inter max-w-xs py-2 px-3 cursor-pointer rounded-md relative",
-        { "bg-white ": color === "light" },
+        { "bg-neutral-white ": color === "neutral-light" },
         { "bg-secondary-800": color === "dark" }
       )}
     >
@@ -31,8 +31,8 @@ export default function ToolTip({
           <p
             className={classNames(
               "font-medium py-1",
-              { "text-secondary-700 ": color === "light" },
-              { "text-white": color === "dark" }
+              { "text-secondary-700 ": color === "neutral-light" },
+              { "text-neutral-white": color === "dark" }
             )}
           >
             {title}
@@ -41,8 +41,8 @@ export default function ToolTip({
         <p
           className={classNames(
             "font-normal font-Inter leading-[18px]",
-            { "text-secondary-500 ": color === "light" },
-            { "text-white": color === "dark" },
+            { "text-secondary-500 ": color === "neutral-light" },
+            { "text-neutral-white": color === "dark" },
             { "pb-1": title }
           )}
         >
@@ -57,7 +57,7 @@ export default function ToolTip({
       placement={placement}
       trigger="click"
       speaker={
-        color === "light" ? (
+        color === "neutral-light" ? (
           <Popover arrow={arrow}>
             <CustomComponent content={content} color={color} title={title} />
           </Popover>

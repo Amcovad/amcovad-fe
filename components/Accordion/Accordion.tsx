@@ -18,7 +18,7 @@ const AccordionLayout = ({ options }: any) => {
         >
           <div
             onClick={() => setActiveTab(activeTab === index ? null : index)}
-            className="flex items-center p-5 lg:p-6 justify-between  cursor-pointer bg-secondary-25 hover:bg-white "
+            className="flex items-center p-5 lg:p-6 justify-between  cursor-pointer bg-secondary-25 hover:bg-neutral-white "
           >
             <div className="flex items-center gap-4 text-secondary-600 font-bold">
               <span>

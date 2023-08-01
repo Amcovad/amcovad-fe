@@ -22,7 +22,7 @@ type Navbars = {
 };
 const style = {
   container: `relative top-1/4 w-full text-left pl-16 md:pl-32 mt-8`,
-  item: `text-3xl text-white cursor-pointer  hover:secondary-25`,
+  item: `text-3xl text-neutral-white cursor-pointer  hover:secondary-25`,
   logo: `absolute top-8 left-8 md:left-20`,
   menu: {
     open: `h-full w-full `,
@@ -171,7 +171,7 @@ const Navbar = ({ isAuthPage }: Navbars) => {
                   </div>
                   <button
                     aria-label="Close"
-                    className="absolute top-3 right-5 text-5xl text-white cursor-pointer "
+                    className="absolute top-3 right-5 text-5xl text-neutral-white cursor-pointer "
                     onClick={() => setIsMenuOpen()}
                   >
                     &times;

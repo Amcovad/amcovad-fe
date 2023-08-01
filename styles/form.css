@@ -91,5 +91,5 @@ input:-webkit-autofill:active {
 }
 
 .has-placeHolder-className {
-  @apply border-secondary-300 bg-white placeholder:text-secondary-700 text-secondary-700;
+  @apply border-secondary-300 bg-neutral-white placeholder:text-secondary-700 text-secondary-700;
 }

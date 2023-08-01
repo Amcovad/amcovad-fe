@@ -7,7 +7,7 @@ const TimelineCard = () => {
   return (
     <div className="px-2 pt-3 lg:py-0 lg:px-0">
       <div
-        className="p-3 pl-6 w-full border mx-auto mb-2 lg:mb-5 border-secondary-50  bg-white rounded-md shadow "
+        className="p-3 pl-6 w-full border mx-auto mb-2 lg:mb-5 border-secondary-50  bg-neutral-white rounded-md shadow "
         role="alert"
       >
         <div className="">
@@ -21,7 +21,7 @@ const TimelineCard = () => {
                 objectFit="cover"
                 alt="user image"
               />
-              <span className="inline-flex absolute right-0 bottom-1 border border-white justify-center items-center w-4 h-4 bg-green-600 rounded-full">
+              <span className="inline-flex absolute right-0 bottom-1 border border-neutral-white justify-center items-center w-4 h-4 bg-green-600 rounded-full">
                 <span className="sr-only">active user</span>
               </span>
             </div>
@@ -44,7 +44,7 @@ const TimelineCard = () => {
           <div className="py-3">
             <div className="flex items-center justify-between mt-5 pb-2 ">
               <div className="flex items-center -space-x-3">
-                <div className="flex items-center justify-center border-2 rounded-full z-10 hover:z-20 border-white">
+                <div className="flex items-center justify-center border-2 rounded-full z-10 hover:z-20 border-neutral-white">
                   <Image
                     className="rounded-full "
                     width={40}
@@ -54,7 +54,7 @@ const TimelineCard = () => {
                     alt="user avatar3"
                   />
                 </div>
-                <div className="flex items-center justify-center border-2 rounded-full z-10 hover:z-20 border-white">
+                <div className="flex items-center justify-center border-2 rounded-full z-10 hover:z-20 border-neutral-white">
                   <Image
                     className="rounded-full"
                     width={40}
@@ -74,7 +74,7 @@ const TimelineCard = () => {
                     alt="user avatar5"
                   />
                 </div>
-                <div className="flex items-center justify-center border-2 rounded-full z-10 hover:z-20 border-white">
+                <div className="flex items-center justify-center border-2 rounded-full z-10 hover:z-20 border-neutral-white">
                   <Image
                     className="rounded-full"
                     width={40}
@@ -85,7 +85,7 @@ const TimelineCard = () => {
                   />
                 </div>
                 <Link href="">
-                  <a className="flex justify-center items-center w-10 h-10 text-xs z-30 font-medium text-center text-white hover:text-white active:text-white visited:text-white bg-secondary-800 rounded-full border-2 border-white hover:bg-secondary-900">
+                  <a className="flex justify-center items-center w-10 h-10 text-xs z-30 font-medium text-center text-neutral-white hover:text-neutral-white active:text-neutral-white visited:text-neutral-white bg-secondary-800 rounded-full border-2 border-neutral-white hover:bg-secondary-900">
                     +99
                   </a>
                 </Link>

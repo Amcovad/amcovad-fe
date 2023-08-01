@@ -10,7 +10,7 @@ const Testimonials = () => {
           <div className=" w-full lg:px-6 xl:px-24 lg:w-3/5 ">
             <div className="w-full relative ">
               <div className=" lg:max-w-[336px]">
-                <h2 className="mb-4 text-3xl max-w-[14rem] md:max-w-[17.25rem] font-RozhaOne text-white font-bold leading-tight tracking-tight sm:text-4xl font-heading">
+                <h2 className="mb-4 text-3xl max-w-[14rem] md:max-w-[17.25rem] font-RozhaOne text-neutral-white font-bold leading-tight tracking-tight sm:text-4xl font-heading">
                   Real Story from real Amcovad.
                 </h2>
                 <p className="mb-4 font-Inter text-sm md:text-base font-normal tracking-tight text-secondary-25 xl:mb-6">

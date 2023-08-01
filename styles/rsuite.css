@@ -21,13 +21,13 @@
   @apply border-2 border-secondary-300;
 }
 .rs-picker-toggle-textbox {
-  @apply bg-light;
+  @apply bg-neutral-light;
 }
 .rs-picker-default .rs-btn,
 .rs-picker-default .rs-picker-toggle,
 .rs-picker-input .rs-btn,
 .rs-picker-input .rs-picker-toggle {
-  @apply !bg-light;
+  @apply !bg-neutral-light;
 }
 .rs-picker-toggle-active,
 .rs-picker.rs-picker-focused {
