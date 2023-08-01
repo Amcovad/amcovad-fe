@@ -5,16 +5,11 @@ import classNames from "classnames";
 
 type NavLinkProp = {
   containerClassName: string;
-  icon: JSX.Element | React.ReactNode;
+  Icon: any;
   name: string;
   url: string;
 };
-const NavLink = ({
-  containerClassName,
-  icon,
-  name,
-  url,
-}: NavLinkProp) => {
+const NavLink = ({ containerClassName, Icon, name, url }: NavLinkProp) => {
   const { asPath } = useRouter();
   const isActiveIcon = url === asPath;
   return (
@@ -31,13 +26,13 @@ const NavLink = ({
         <a className="inline-flex items-center w-full text-sm font-normal font-Inter text-secondary-700 focus:text-secondary-700 transition-colors duration-150 hover:text-primary-500 ">
           <span
             className={classNames(
-              { "text-secondary-800": icon && !isActiveIcon },
-              { "text-primary-500": icon && isActiveIcon }
+              { "text-secondary-800": Icon && !isActiveIcon },
+              { "text-primary-500": Icon && isActiveIcon }
             )}
           >
-            {icon}
+            <Icon size="22" variant="Bulk" />
           </span>
-         <span className="ml-4">{name}</span>
+          <span className="ml-4">{name}</span>
         </a>
       </Link>
     </li>

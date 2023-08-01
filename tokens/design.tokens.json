@@ -9,41 +9,6 @@
   "dictionary": {
     "properties": {
       "color": {
-        "white": {
-          "description": "",
-          "type": "color",
-          "value": "#ffffff",
-          "blendMode": "normal",
-          "extensions": {
-            "org.lukasoppermann.figmaDesignTokens": {
-              "styleId": "S:9258ea67369df86b259ce015150cb9d6bc470be4,",
-              "exportKey": "color"
-            }
-          },
-          "filePath": "./style-dictionary/src/design-tokens.tokens.json",
-          "isSource": true,
-          "original": {
-            "description": "",
-            "type": "color",
-            "value": "#ffffffff",
-            "blendMode": "normal",
-            "extensions": {
-              "org.lukasoppermann.figmaDesignTokens": {
-                "styleId": "S:9258ea67369df86b259ce015150cb9d6bc470be4,",
-                "exportKey": "color"
-              }
-            }
-          },
-          "name": "ColorWhite",
-          "attributes": {
-            "category": "color",
-            "type": "white"
-          },
-          "path": [
-            "color",
-            "white"
-          ]
-        },
         "primary": {
           "25": {
             "description": "",
@@ -3620,41 +3585,6 @@
       {
         "description": "",
         "type": "color",
-        "value": "#ffffff",
-        "blendMode": "normal",
-        "extensions": {
-          "org.lukasoppermann.figmaDesignTokens": {
-            "styleId": "S:9258ea67369df86b259ce015150cb9d6bc470be4,",
-            "exportKey": "color"
-          }
-        },
-        "filePath": "./style-dictionary/src/design-tokens.tokens.json",
-        "isSource": true,
-        "original": {
-          "description": "",
-          "type": "color",
-          "value": "#ffffffff",
-          "blendMode": "normal",
-          "extensions": {
-            "org.lukasoppermann.figmaDesignTokens": {
-              "styleId": "S:9258ea67369df86b259ce015150cb9d6bc470be4,",
-              "exportKey": "color"
-            }
-          }
-        },
-        "name": "ColorWhite",
-        "attributes": {
-          "category": "color",
-          "type": "white"
-        },
-        "path": [
-          "color",
-          "white"
-        ]
-      },
-      {
-        "description": "",
-        "type": "color",
         "value": "#f2fbff",
         "blendMode": "normal",
         "extensions": {
@@ -7207,41 +7137,6 @@
     ],
     "tokens": {
       "color": {
-        "white": {
-          "description": "",
-          "type": "color",
-          "value": "#ffffff",
-          "blendMode": "normal",
-          "extensions": {
-            "org.lukasoppermann.figmaDesignTokens": {
-              "styleId": "S:9258ea67369df86b259ce015150cb9d6bc470be4,",
-              "exportKey": "color"
-            }
-          },
-          "filePath": "./style-dictionary/src/design-tokens.tokens.json",
-          "isSource": true,
-          "original": {
-            "description": "",
-            "type": "color",
-            "value": "#ffffffff",
-            "blendMode": "normal",
-            "extensions": {
-              "org.lukasoppermann.figmaDesignTokens": {
-                "styleId": "S:9258ea67369df86b259ce015150cb9d6bc470be4,",
-                "exportKey": "color"
-              }
-            }
-          },
-          "name": "ColorWhite",
-          "attributes": {
-            "category": "color",
-            "type": "white"
-          },
-          "path": [
-            "color",
-            "white"
-          ]
-        },
         "primary": {
           "25": {
             "description": "",
@@ -10818,41 +10713,6 @@
       {
         "description": "",
         "type": "color",
-        "value": "#ffffff",
-        "blendMode": "normal",
-        "extensions": {
-          "org.lukasoppermann.figmaDesignTokens": {
-            "styleId": "S:9258ea67369df86b259ce015150cb9d6bc470be4,",
-            "exportKey": "color"
-          }
-        },
-        "filePath": "./style-dictionary/src/design-tokens.tokens.json",
-        "isSource": true,
-        "original": {
-          "description": "",
-          "type": "color",
-          "value": "#ffffffff",
-          "blendMode": "normal",
-          "extensions": {
-            "org.lukasoppermann.figmaDesignTokens": {
-              "styleId": "S:9258ea67369df86b259ce015150cb9d6bc470be4,",
-              "exportKey": "color"
-            }
-          }
-        },
-        "name": "ColorWhite",
-        "attributes": {
-          "category": "color",
-          "type": "white"
-        },
-        "path": [
-          "color",
-          "white"
-        ]
-      },
-      {
-        "description": "",
-        "type": "color",
         "value": "#f2fbff",
         "blendMode": "normal",
         "extensions": {
@@ -14405,41 +14265,6 @@
     ],
     "_properties": {
       "color": {
-        "white": {
-          "description": "",
-          "type": "color",
-          "value": "#ffffff",
-          "blendMode": "normal",
-          "extensions": {
-            "org.lukasoppermann.figmaDesignTokens": {
-              "styleId": "S:9258ea67369df86b259ce015150cb9d6bc470be4,",
-              "exportKey": "color"
-            }
-          },
-          "filePath": "./style-dictionary/src/design-tokens.tokens.json",
-          "isSource": true,
-          "original": {
-            "description": "",
-            "type": "color",
-            "value": "#ffffffff",
-            "blendMode": "normal",
-            "extensions": {
-              "org.lukasoppermann.figmaDesignTokens": {
-                "styleId": "S:9258ea67369df86b259ce015150cb9d6bc470be4,",
-                "exportKey": "color"
-              }
-            }
-          },
-          "name": "ColorWhite",
-          "attributes": {
-            "category": "color",
-            "type": "white"
-          },
-          "path": [
-            "color",
-            "white"
-          ]
-        },
         "primary": {
           "25": {
             "description": "",
@@ -18017,41 +17842,6 @@
     {
       "description": "",
       "type": "color",
-      "value": "#ffffff",
-      "blendMode": "normal",
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "styleId": "S:9258ea67369df86b259ce015150cb9d6bc470be4,",
-          "exportKey": "color"
-        }
-      },
-      "filePath": "./style-dictionary/src/design-tokens.tokens.json",
-      "isSource": true,
-      "original": {
-        "description": "",
-        "type": "color",
-        "value": "#ffffffff",
-        "blendMode": "normal",
-        "extensions": {
-          "org.lukasoppermann.figmaDesignTokens": {
-            "styleId": "S:9258ea67369df86b259ce015150cb9d6bc470be4,",
-            "exportKey": "color"
-          }
-        }
-      },
-      "name": "ColorWhite",
-      "attributes": {
-        "category": "color",
-        "type": "white"
-      },
-      "path": [
-        "color",
-        "white"
-      ]
-    },
-    {
-      "description": "",
-      "type": "color",
       "value": "#f2fbff",
       "blendMode": "normal",
       "extensions": {
@@ -21604,41 +21394,6 @@
   ],
   "properties": {
     "color": {
-      "white": {
-        "description": "",
-        "type": "color",
-        "value": "#ffffff",
-        "blendMode": "normal",
-        "extensions": {
-          "org.lukasoppermann.figmaDesignTokens": {
-            "styleId": "S:9258ea67369df86b259ce015150cb9d6bc470be4,",
-            "exportKey": "color"
-          }
-        },
-        "filePath": "./style-dictionary/src/design-tokens.tokens.json",
-        "isSource": true,
-        "original": {
-          "description": "",
-          "type": "color",
-          "value": "#ffffffff",
-          "blendMode": "normal",
-          "extensions": {
-            "org.lukasoppermann.figmaDesignTokens": {
-              "styleId": "S:9258ea67369df86b259ce015150cb9d6bc470be4,",
-              "exportKey": "color"
-            }
-          }
-        },
-        "name": "ColorWhite",
-        "attributes": {
-          "category": "color",
-          "type": "white"
-        },
-        "path": [
-          "color",
-          "white"
-        ]
-      },
       "primary": {
         "25": {
           "description": "",
@@ -25215,41 +24970,6 @@
     {
       "description": "",
       "type": "color",
-      "value": "#ffffff",
-      "blendMode": "normal",
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "styleId": "S:9258ea67369df86b259ce015150cb9d6bc470be4,",
-          "exportKey": "color"
-        }
-      },
-      "filePath": "./style-dictionary/src/design-tokens.tokens.json",
-      "isSource": true,
-      "original": {
-        "description": "",
-        "type": "color",
-        "value": "#ffffffff",
-        "blendMode": "normal",
-        "extensions": {
-          "org.lukasoppermann.figmaDesignTokens": {
-            "styleId": "S:9258ea67369df86b259ce015150cb9d6bc470be4,",
-            "exportKey": "color"
-          }
-        }
-      },
-      "name": "ColorWhite",
-      "attributes": {
-        "category": "color",
-        "type": "white"
-      },
-      "path": [
-        "color",
-        "white"
-      ]
-    },
-    {
-      "description": "",
-      "type": "color",
       "value": "#f2fbff",
       "blendMode": "normal",
       "extensions": {
@@ -28802,41 +28522,6 @@
   ],
   "tokens": {
     "color": {
-      "white": {
-        "description": "",
-        "type": "color",
-        "value": "#ffffff",
-        "blendMode": "normal",
-        "extensions": {
-          "org.lukasoppermann.figmaDesignTokens": {
-            "styleId": "S:9258ea67369df86b259ce015150cb9d6bc470be4,",
-            "exportKey": "color"
-          }
-        },
-        "filePath": "./style-dictionary/src/design-tokens.tokens.json",
-        "isSource": true,
-        "original": {
-          "description": "",
-          "type": "color",
-          "value": "#ffffffff",
-          "blendMode": "normal",
-          "extensions": {
-            "org.lukasoppermann.figmaDesignTokens": {
-              "styleId": "S:9258ea67369df86b259ce015150cb9d6bc470be4,",
-              "exportKey": "color"
-            }
-          }
-        },
-        "name": "ColorWhite",
-        "attributes": {
-          "category": "color",
-          "type": "white"
-        },
-        "path": [
-          "color",
-          "white"
-        ]
-      },
       "primary": {
         "25": {
           "description": "",

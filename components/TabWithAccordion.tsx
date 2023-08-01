@@ -14,7 +14,7 @@ const TabWithAccordion = ({ data }: Data) => {
       key={index}
       onClick={() => setVisibleTab(index)}
       className={classNames(
-        "inline-block text-sm font-Inter font-medium p-4 lg:p-3 text-black cursor-pointer ",
+        "inline-block text-sm font-Inter font-medium p-4 lg:p-3 text-neutral-black cursor-pointer ",
         {
           "border-b-[4px] border-primary-400 rounded-sm mb-[-3px] text-primary-400":
             visibleTab === index,
@@ -31,7 +31,7 @@ const TabWithAccordion = ({ data }: Data) => {
       key={index}
       style={visibleTab === index ? {} : { display: "none" }}
     >
-      <h4 className="font-RozhaOne my-3 text-2xl lg:text-4xl text-black">
+      <h4 className="font-RozhaOne my-3 text-2xl lg:text-4xl text-neutral-black">
         {item}
       </h4>
       <div className="flex flex-col justify-center items-center w-full">

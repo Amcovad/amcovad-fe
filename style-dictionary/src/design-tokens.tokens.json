@@ -1,17 +1,5 @@
 {
   "color": {
-    "white": {
-      "description": "",
-      "type": "color",
-      "value": "#ffffffff",
-      "blendMode": "normal",
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "styleId": "S:9258ea67369df86b259ce015150cb9d6bc470be4,",
-          "exportKey": "color"
-        }
-      }
-    },
     "primary": {
       "25": {
         "description": "",

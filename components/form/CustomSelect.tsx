@@ -24,7 +24,7 @@ export default function CustomSelect({
               Select Friend from your Connections
             </Listbox.Label>
             <div className="relative ">
-              <Listbox.Button className="relative w-full cursor-default rounded-md bg-white py-3 pl-3 pr-10 text-left text-secondary-700 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:border-primary-200 focus:ring-primary-200 focus:shadow-primary-sm sm:text-sm sm:leading-6">
+              <Listbox.Button className="relative w-full cursor-default rounded-md bg-neutral-white py-3 pl-3 pr-10 text-left text-secondary-700 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:border-primary-200 focus:ring-primary-200 focus:shadow-primary-sm sm:text-sm sm:leading-6">
                 <span className="flex items-center">
                   <img
                     src={selected.avatar}
@@ -50,14 +50,14 @@ export default function CustomSelect({
                 leaveFrom="opacity-100"
                 leaveTo="opacity-0"
               >
-                <Listbox.Options className="absolute z-10 mt-1 max-h-56 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+                <Listbox.Options className="absolute z-10 mt-1 max-h-56 w-full overflow-auto rounded-md bg-neutral-white py-1 text-base shadow-lg ring-1 ring-neutral-black ring-opacity-5 focus:outline-none sm:text-sm">
                   {data.map((person: any) => (
                     <Listbox.Option
                       key={person.id}
                       className={({ active }) =>
                         classNames(
                           active
-                            ? "bg-primary-400 text-white"
+                            ? "bg-primary-400 text-neutral-white"
                             : "text-gray-900",
                           "relative cursor-default select-none py-2 pl-3 pr-9"
                         )
@@ -85,7 +85,9 @@ export default function CustomSelect({
                           {selected ? (
                             <span
                               className={classNames(
-                                active ? "text-white" : "text-primary-600",
+                                active
+                                  ? "text-neutral-white"
+                                  : "text-primary-600",
                                 "absolute inset-y-0 right-0 flex items-center pr-4"
                               )}
                             >

@@ -58,7 +58,7 @@ const Toggle = ({
             />
             <span
               className={classNames(
-                "peer-checked:bg-white transition-all duration-200 pointer-events-none w-4 h-4 block absolute top-[2px] left-1 rounded-full bg-white",
+                "peer-checked:bg-neutral-white transition-all duration-200 pointer-events-none w-4 h-4 block absolute top-[2px] left-1 rounded-full bg-neutral-white",
                 { "peer-disabled:left-5": disabled },
                 { "peer-checked:left-5": !disabled }
               )}

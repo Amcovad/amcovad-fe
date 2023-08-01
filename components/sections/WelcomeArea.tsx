@@ -16,12 +16,12 @@ const WelcomeArea = () => {
                     Digital approach to a secure deal & transactions
                   </span>
                 </h1>
-                <p className="text-tertiary font-Inter text-sm font-normal sm:max-w-md  md:max-w-[471px]">
+                <p className="text-neutral-tertiary font-Inter text-sm font-normal sm:max-w-md  md:max-w-[471px]">
                   Gallia est omnis divisa in partes tres, quarum. Fabio vel
                   iudice vincam, sunt in culpa qui officia. Salutantibus vitae
                   elit libero, a pharetra augue.
                 </p>
-                <Button className="text-white py-2.5 px-5">
+                <Button className="text-neutral-white py-2.5 px-5">
                   <Link href="/sign-in">
                     <a>Start now</a>
                   </Link>

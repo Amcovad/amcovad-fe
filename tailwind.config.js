@@ -1,40 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 const colors = require("./tokens/color.tokens");
+const extentedColors = require("./utils/devTokens");
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
     "./data/**/*.{js,ts,jsx,tsx}",
   ],
-  safelist: [
-    "text-secondary-100",
-    "bg-secondary-500",
-    "bg-primary-500",
-    "bg-secondary-green",
-    "bg-primary-200",
-    "border-danger-500/70 bg-danger-500/10",
-    "border-info-500/70 bg-info/10",
-    "border-success-500/70 bg-success-500/10",
-    "border-warning-500/70 bg-warning-500/10",
-
-    "form-checkbox checked:bg-checked-sm",
-    "form-checkbox checked:bg-checked-md",
-    "form-checkbox disabled:bg-checked-sm-disabled",
-    "form-checkbox disabled:bg-checked-md-disabled",
-    "form-checkbox checked:bg-minus-sm",
-    "form-checkbox checked:bg-minus-md",
-    "form-checkbox disabled:bg-minus-sm-disabled",
-    "form-checkbox disabled:bg-minus-md-disabled",
-
-    "form-radio checked:bg-radio-sm",
-    "form-radio checked:bg-radio-md",
-    "form-radio disabled:bg-radio-sm-disabled",
-    "form-radio disabled:bg-radio-md-disabled",
-    "form-radio checked:bg-checked-radio-sm",
-    "form-radio checked:bg-checked-radio-md",
-    "form-radio disabled:bg-checked-radio-sm-disabled",
-    "form-radio disabled:bg-checked-radio-md-disabled",
-  ],
+  safelist: [],
   mode: "jit",
   theme: {
     boxShadow: {
@@ -80,12 +53,8 @@ module.exports = {
           "url('/assets/form/checked-radioIcon-disabled-md.svg')",
       },
       colors: {
+        ...extentedColors,
         ...colors,
-        white: "#FFFFFF",
-        black: "#000000",
-        tertiary: "#0C1A2C",
-        lightgray: "#F5F6F8",
-        light: "#E6E8EA",
       },
     },
   },

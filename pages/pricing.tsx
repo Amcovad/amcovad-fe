@@ -30,7 +30,7 @@ const Faqs = () => {
               </p>
               <Link href="sign-in">
                 <a>
-                  <button className="mt-4 font-Inter rounded-md shadow-normal text-primary-500 hover:text-white hover:bg-primary-500 font-medium text-base lg:text-xl px-9 py-4 bg-primary-50">
+                  <button className="mt-4 font-Inter rounded-md shadow-normal text-primary-500 hover:text-neutral-white hover:bg-primary-500 font-medium text-base lg:text-xl px-9 py-4 bg-primary-50">
                     Get Started For Free
                   </button>
                 </a>
@@ -46,11 +46,11 @@ const Faqs = () => {
                           alt="Security Lock image"
                         />
 
-                        <p className="text-black py-3 text-lg md:text-xl lg:text-2xl xl:text-3xl xl:leading-[44px] font-Inter font-semibold">
+                        <p className="text-neutral-black py-3 text-lg md:text-xl lg:text-2xl xl:text-3xl xl:leading-[44px] font-Inter font-semibold">
                           BASIC SECURITY
                         </p>
 
-                        <div className="text-black pt-6 lg:pt-10 text-sm space-y-5">
+                        <div className="text-neutral-black pt-6 lg:pt-10 text-sm space-y-5">
                           <p>Unlimited transactions</p>
                           <p>Network Connections </p>
                           <p>Location tracking </p>
@@ -86,7 +86,7 @@ const Faqs = () => {
                           PREMIUM SECURITY
                         </p>
 
-                        <div className="text-black pt-6 lg:pt-10 text-sm space-y-5">
+                        <div className="text-neutral-black pt-6 lg:pt-10 text-sm space-y-5">
                           <p>Unlimited transactions</p>
                           <p>Network Connections </p>
                           <p>Location tracking </p>

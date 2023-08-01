@@ -20,9 +20,10 @@
       "@/public/*": ["public/*"],
       "@/data/*": ["data/*"],
       "@/types/*": ["types/*"],
-      "@/utils/*": ["utils/*"]
+      "@/utils/*": ["utils/*"],
+      "@/tokens/*": ["tokens/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "utils/devTokens.js"],
   "exclude": ["node_modules"]
 }

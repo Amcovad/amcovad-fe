@@ -11,29 +11,15 @@ function Dashboard() {
       <DashboardLayout title="Transaction">
         <div className="flex flex-col lg:flex-row items-center gap-5 lg:gap-8">
           {createNew.map(
-            (
-              {
-                backGround,
-                borderColor,
-                btn,
-                Icon,
-                iconColor,
-                textColor,
-                title,
-                url,
-              },
-              index
-            ) => (
+            ({ Icon, iconColor, title, url, color, btnTitle }, index) => (
               <CreateNewTransact
-                backGround={backGround}
-                borderColor={borderColor}
-                btn={btn}
                 Icon={Icon}
                 iconColor={iconColor}
-                textColor={textColor}
                 title={title}
                 url={url}
                 key={index}
+                btnTitle={btnTitle}
+                color={color}
               />
             )
           )}

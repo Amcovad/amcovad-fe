@@ -7,7 +7,7 @@ export const HamburgerIcon2 = (props: any) => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clippath="url(#clip0_2796_25859)">
+    <g clipPath="url(#clip0_2796_25859)">
       <path
         d="M2.28571 11.4285C1.02543 11.4285 0 12.4539 0 13.7142C0 14.9745 1.02543 15.9999 2.28571 15.9999C3.546 15.9999 4.57143 14.9745 4.57143 13.7142C4.57143 12.4539 3.546 11.4285 2.28571 11.4285Z"
         fill="#616A7A"
@@ -47,7 +47,7 @@ export const HamburgerIcon2 = (props: any) => (
     </g>
     <defs>
       <clipPath id="clip0_2796_25859">
-        <rect width="{16}" height="{16}" fill="white" />
+        <rect width={16} height={16} fill="neutral-white" />
       </clipPath>
     </defs>
   </svg>

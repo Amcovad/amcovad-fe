@@ -33,7 +33,7 @@ const AuthPage = ({ children, image, imagealt, text, title }: AuthPages) => {
                   </Link>
                   <div className="bg-secondary-25  p-6 lg:p-8 ">
                     <div className="mb-8">
-                      <h2 className=" font-RozhaOne max-w-[300px] md:max-w-[424px] text-2xl md:text-4xl font-extrabold lg:font-bold text-tertiary pb-2">
+                      <h2 className=" font-RozhaOne max-w-[300px] md:max-w-[424px] text-2xl md:text-4xl font-extrabold lg:font-bold text-neutral-tertiary pb-2">
                         {title}
                       </h2>
                       <p className="text-secondary-700 text-[14px]">{text}</p>

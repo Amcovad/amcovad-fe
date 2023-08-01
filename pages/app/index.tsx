@@ -52,41 +52,28 @@ function Dashboard() {
         <>
           <NewFriendToast />
           <div className="items-center lg:gap-x-2 xl:gap-x-3 hidden lg:flex py-4 lg:pr-10 remove-right-padding xl:pr-0 pt-6">
-            {newActionsData.map(
-              ({ backGround, icon, title, textColor, borderColor }, index) => {
-                return (
-                  <NewActionCard
-                    key={index}
-                    backGround={backGround}
-                    title={title}
-                    icon={icon}
-                    textColor={textColor}
-                    borderColor={borderColor}
-                  />
-                );
-              }
-            )}
+            {newActionsData.map(({ color, icon, title }, index) => {
+              return (
+                <NewActionCard
+                  key={index}
+                  color={color}
+                  title={title}
+                  icon={icon}
+                />
+              );
+            })}
           </div>
           <div className="flex items-center lg:hidden gap-x-4 pb-4 px-2 lg:pt-6">
-            {newActionsData
-              .slice(0, 2)
-              .map(
-                (
-                  { backGround, icon, title, textColor, borderColor },
-                  index
-                ) => {
-                  return (
-                    <NewActionCard
-                      key={index}
-                      backGround={backGround}
-                      title={title}
-                      icon={icon}
-                      textColor={textColor}
-                      borderColor={borderColor}
-                    />
-                  );
-                }
-              )}
+            {newActionsData.slice(0, 2).map(({ color, icon, title }, index) => {
+              return (
+                <NewActionCard
+                  key={index}
+                  color={color}
+                  title={title}
+                  icon={icon}
+                />
+              );
+            })}
           </div>
           <div className="lg:hidden block">
             <AttentionCard />

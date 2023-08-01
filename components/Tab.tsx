@@ -13,7 +13,7 @@ const Tab = ({ data }: Data) => {
       key={index}
       onClick={() => setVisibleTab(index)}
       className={classNames(
-        "inline-block text-sm font-Inter font-medium p-4 lg:p-3 text-black cursor-pointer ",
+        "inline-block text-sm font-Inter font-medium p-4 lg:p-3 text-neutral-black cursor-pointer ",
         {
           "border-b-[4px] border-primary-400 rounded-sm mb-[-2.5px] text-primary-400":
             visibleTab === index,
@@ -30,7 +30,7 @@ const Tab = ({ data }: Data) => {
       key={index}
       style={visibleTab === index ? {} : { display: "none" }}
     >
-      <h4 className="font-RozhaOne my-3 text-2xl lg:text-4xl text-black">
+      <h4 className="font-RozhaOne my-3 text-2xl lg:text-4xl text-neutral-black">
         {item.split(" ").slice(0, -1).join(" ")}{" "}
         <span className="text-primary-500">
           {item.split(" ").slice(-1).join(" ")}
