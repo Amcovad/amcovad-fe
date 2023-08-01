@@ -95,7 +95,7 @@ const Input = ({
           id={name}
           {...register(name)}
           className={classNames(
-            "block py-3.5 px-1 w-full text-base bg-secondary-25 border-secondary-100 border-2 rounded-md focus:outline-none focus:ring-0 peer",
+            "block py-3.5 px-1 w-full text-base bg-secondary-25 border-secondary-100 border rounded-md focus:outline-none focus:ring-0 peer",
             className,
             { "pl-10 pr-8": leadingIcon },
             {
